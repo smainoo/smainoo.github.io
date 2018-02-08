@@ -1,0 +1,30 @@
+/*This is my screen file for the weather site*/
+
+/*Import the Sansita font from google fonts. Import must be first in a stlyesheet*/
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('normalize.css');
+
+/*Table of Contents
+
+
+1. General Rules
+2. Mobile First Rules
+2a. Layout
+3. Large Screen Rules
+3a. Layout
+
+*/
+
+/*General Rules*/
+* {
+  box-sizing: border-box; /* changes width property to total width instead of content width*/
+}
+*:before, *: after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: helvitica arial sans-serif;
+  font-size 18px;
+  background-color: #aa0000;
+}
