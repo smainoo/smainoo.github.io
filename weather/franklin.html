@@ -18,7 +18,7 @@
     </header>
     <nav>
       <ul>
-        <li><a href="https://smainoo.github.io/" title="go to weather site">go to home page</a></li>
+        <li><a href="https://smainoo.github.io/" title="go to weather site">Home</a></li>
         <li>Search</li>
         <li><a href="franklin.html" title="Franklin page">Franklin</a></li>
         <li>Greenville</li>
@@ -30,46 +30,56 @@
     </nav>
 
     <main>
-      <h1>Franklin, Idaho</h1>
-      <section id="locationInfo">
-        <p><b>Zip</b>: 83440</p>
-        <p><b>Elevation</b>: 4501 ft.</p>
-        <p><b>Location</b>: 42.011902&deg;N, 111.803757&deg;W</p>
-      </section>
+<!--      put all content in a tile container-->
 
-      <div id="tilesContent">
-        <section id="tempTile">
+        <h1>Franklin, Idaho</h1>
+          <section id="locationInfo">
+           <p><b>Zip</b>: 83440</p>
+           <p><b>Elevation</b>: 4501 ft.</p>
+           <p><b>Location</b>: 42.011902&deg;N, 111.803757&deg;W</p>
+          </section>
 
-        </section>
-      </div>
 
 <!--current weather information section goes here     -->
-      <div id="weatherInfo">
+       <div id="weatherInfo">
         <section id="temp">
-          <p><b>Temperature</b></p>
+<!--          <p><b>Temperature</b></p>-->
           <p>24&deg;F</p>
           <p>34&deg;F 21&deg;F</p>
           <p>Feels Like 21&deg;F</p>
         </section>
-      </div>
+       </div>
 
 <!--      Wind Section is contained here-->
-      <div id="windInfo">
+       <div id="windInfo">
         <section id="wind">
           <p>2mph</p>
-          <ul>
-            <li>Direction:NW</li>
-            <li>Gust:5mph</li>
-
-          </ul>
+          <p>Direction:NW</p>
+          <p>Gust:5mph</p>
         </section>
-      </div>
+       </div>
 
-      <div id=videoInfo>
+       <div id=videoInfo>
         <section id="videoCast">
           <p><b>Video Forecast</b></p>
 
         </section>
+       </div>
+      <div class="tempTile">
+        <div id="temp"><p>24&deg;F</p>
+          <p>34&deg;F 21&deg;F</p>
+          <p>Feels Like 21&deg;F</p>
+        </div>
+
+        <div id="wind"><p>2mph</p>
+          <p>Direction:NW</p>
+          <p>Gust:5mph</p>
+        </div>
+
+
+      </div>
+      <div class="videoTile">
+
       </div>
 <!--      <img src="images/wireframe-small.png" alt="small frame">-->
 <!--      <img src="images/wireframe-large.png" alt="large frame">-->
