@@ -43,3 +43,13 @@ nav {
   bottom: 0;
   left: 10px;
 }
+/*set the footer to be visible*/
+footer{
+  margin-bottom: 2em;
+}
+
+/*style the page header with a class*/
+.site-brand{
+  font-weight: 600;
+  font-size: 2em;
+}
