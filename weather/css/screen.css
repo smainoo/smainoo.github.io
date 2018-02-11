@@ -36,6 +36,7 @@ nav ul li {
   display: inline-block;
   list-style: none;
 
+
 }
 /*Increase the heigth of the nav bar*/
 
@@ -44,6 +45,7 @@ nav {
   bottom: 0;
   left: 10px;
   background-color: #0e89d5;
+ line-height: 10px;
 }
 /*set the footer to be visible*/
 footer{
@@ -52,14 +54,15 @@ footer{
 }
 
 /*style the page header with a class*/
-.site-brand{
+#site-brand{
   font-size: 2em;
-  font-weight:bolder;
+  font-weight:700;
   text-align: center;
 }
 /*increase the logo*/
 .logo{
   border-image-width: 10px;
+  image-orientation: left;
 }
 /*change header background color*/
 header{
