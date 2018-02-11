@@ -23,7 +23,7 @@
         <li>Greenville</li>
         <li>Springfield</li>
 
-        <img src="images/weather-nav-bar.png" alt="weather navigation bar">
+<!--        <img src="images/weather-nav-bar.png" alt="weather navigation bar">-->
 
       </ul>
     </nav>
@@ -31,29 +31,48 @@
     <main>
       <h1>Franklin, Idaho</h1>
       <section id="locationInfo">
-        <p>Zip: 83440</p><br>
-        <p>Elevation: 4501 ft.</p><br>
-        <p>Location: 42.011902&deg;N, 111.803757&deg;W</p>
+        <p><b>Zip</b>: 83440</p>
+        <p><b>Elevation</b>: 4501 ft.</p>
+        <p><b>Location</b>: 42.011902&deg;N, 111.803757&deg;W</p>
       </section>
 
-<!--Temperature section goes here     -->
-      <section id="temp"><b>Temperature</b>
-        <p>24&deg;F</p>
-        <p>34&deg;F 21&deg;F</p>
-        <p>Feels Like 21&deg;F</p>
-      </section>
+<!--current weather information section goes here     -->
+      <div id="weatherInfo">
+        <section id="temp">
+          <p><b>Temperature</b></p>
+          <p>24&deg;F</p>
+          <p>34&deg;F 21&deg;F</p>
+          <p>Feels Like 21&deg;F</p>
+        </section>
+      </div>
 
 <!--      Wind Section is contained here-->
-      <section id="wind">Wind</section>
-      <
-      <P><b>Video Forcast</b></P>
-      <img src="images/wireframe-small.png" alt="small frame">
-      <img src="images/wireframe-large.png" alt="large frame">
+      <div id="windInfo">
+        <section id="wind">
+          <p>2mph</p>
+          <ul>
+            <li>Direction:NW</li>
+            <li>Gust:5mph</li>
 
-      <P><b>Hourly Forecast</b></P>
-      <p> 12am: 67F | 1am: 67F | 2am: 69F | 3am: 69F | 4am: 69F | 5am: 70F | 6am: 20 |7am: 21 |8am: 25 | 9am: 28 | 10am: 30&deg; F | 11am: 34 | 12am: 35 | 13am: 37 | 14am: 38 | 15am: 39 | 16am: 39 | 17am: 38 | 18am: 36F | 19am: 34F | 20am: 33F | 21am: 33F | 22am: 31F | 23am: 31F
+          </ul>
+        </section>
+      </div>
 
-        </p>
+      <div id=videoInfo>
+        <section id="videoCast">
+
+        </section>
+      </div>
+<!--      <img src="images/wireframe-small.png" alt="small frame">-->
+<!--      <img src="images/wireframe-large.png" alt="large frame">-->
+      <div id="hourInfo">
+        <section id="hourly">
+         <P><b>Hourly Forecast</b></P>
+           <p> 12am: 67F | 1am: 67F | 2am: 69F | 3am: 69F | 4am: 69F | 5am: 70F | 6am: 20 |7am: 21 |8am: 25 | 9am: 28 | 10am: 30&deg; F | 11am: 34 | 12am: 35 | 13am: 37 | 14am: 38 | 15am: 39 | 16am: 39 | 17am: 38 | 18am: 36F | 19am: 34F | 20am: 33F | 21am: 33F | 22am: 31F | 23am: 31F
+
+          </p>
+        </section>
+      </div>
 
 
 
