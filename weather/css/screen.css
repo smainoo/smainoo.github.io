@@ -50,6 +50,6 @@ footer{
 
 /*style the page header with a class*/
 .site-brand{
-  font-weight: 600;
   font-size: 2em;
+  font-weight: 600;
 }
