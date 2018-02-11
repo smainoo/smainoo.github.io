@@ -26,12 +26,20 @@
 body{
   font-family: helvitica arial sans-serif;
   font-size 18px;
-  background-color: #0000ff;
+  background-color: #5D8BD8;
   margin: 20px;
   padding: 5px;
 }
 
+/*make the navigation list horizonatl*/
 nav ul li {
   display: inline-block;
   list-style: none;
+}
+/*Increase the heigth of the nav bar*/
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
 }
