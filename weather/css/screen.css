@@ -19,13 +19,13 @@
 * {
   box-sizing: border-box; /* changes width property to total width instead of content width*/
 }
-*:before, *: after{
+*:before, *:after{
   box-sizing: border-box;
 }
 
 body{
   font-family: helvitica arial sans-serif;
-  font-size 18;
+  font-size 20;
   background-color:;
   margin: 20px;
   padding: 5px;
@@ -84,4 +84,10 @@ main{
   font-size: 30px;
   color: #000;
 }
-
+#max{
+  color: #F00;
+}
+.videoTile{
+  border: 2px solid #000;
+  text-align: center;
+}
