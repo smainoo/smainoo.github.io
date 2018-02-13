@@ -48,6 +48,13 @@ nav {
  line-height: 10px;
   width: 100%;
 }
+/*apply flex properties to the page-nav id*/
+
+#page-nav ul{
+  display: flex;
+  justify-content: space-around;
+
+}
 /*set the footer to be visible*/
 footer{
   margin-bottom: 2em;
