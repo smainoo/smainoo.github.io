@@ -46,11 +46,13 @@ nav {
   left: 10px;
   background-color: #0e89d5;
  line-height: 10px;
+  width: 100%;
 }
 /*set the footer to be visible*/
 footer{
   margin-bottom: 2em;
   background-color: #0e89d5;
+
 }
 
 /*style the page header with a class*/
