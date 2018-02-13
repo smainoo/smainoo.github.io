@@ -87,7 +87,10 @@ main{
 #max{
   color: #F00;
 }
+#min{
+  color: #00F;
+}
 .videoTile{
-  border: 2px solid #000;
+  border:2px solid #000;
   text-align: center;
 }
