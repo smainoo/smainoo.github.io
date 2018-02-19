@@ -29,7 +29,6 @@ body{
   background-color:#fff;
   margin: 20px;
   padding: 5px;
-  background-image: url("images/weather-images/clear.jpg");
 }
 
 /*make the navigation list horizonatl*/
@@ -110,4 +109,5 @@ main{
   text-align: center;
   margin: 5px;
   border-radius: 10px;
+  background-image: url(/weather/images/video.png)
 }
