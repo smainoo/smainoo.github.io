@@ -49,6 +49,10 @@ nav {
   width: 100%;
 }
 /*apply flex properties to the page-nav id*/
+a:link{
+  color:#FFF;
+
+}
 
 #page-nav ul{
   display: flex;
@@ -106,8 +110,11 @@ main{
 }
 .videoTile{
   border:2px solid #000;
-  text-align: center;
+  padding: 150px;
   margin: 5px;
   border-radius: 10px;
-  background-image: url(/weather/images/video.png)
+background-image: url(/weather/images/video.png);
+  background-repeat: no-repeat;
+  background-position: center;
+text-align: center;
 }
