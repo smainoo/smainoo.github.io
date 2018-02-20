@@ -54,6 +54,16 @@ a:link{
 
 }
 
+a:active{
+  color:#FFF;
+
+}
+
+a:visited{
+  color:#FFF;
+
+}
+
 #page-nav ul{
   display: flex;
   justify-content: space-around;
@@ -93,10 +103,15 @@ main{
 }
 /*create the tile comtainer*/
 .tempTile{
+  display: flex;
   border:2px solid #000;
   text-align: center;
   margin: 5px;
   border-radius: 10px;
+  background-color: #ccc7c7;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #mainTemp{
   font-size: 30px;
@@ -118,3 +133,21 @@ background-image: url(/weather/images/video.png);
   background-position: center;
 text-align: center;
 }
+#temp {
+  display: flex;
+  flex-flow: column wrap;
+  padding-right: 500px;
+  padding-left: 100px;
+
+  align-content: flex-end;
+}
+#wind {
+  display: flex;
+  flex-flow: column wrap;
+/*  padding-left: 700px;*/
+  flex-direction: column;
+
+  align-content: flex-end;
+}
+
+
