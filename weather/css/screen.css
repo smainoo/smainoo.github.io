@@ -144,8 +144,8 @@ text-align: center;
 #wind {
   display: flex;
   flex-flow: column wrap;
-/*  padding-left: 700px;*/
   flex-direction: column;
+  justify-content: center;
 
   align-content: flex-end;
 }
