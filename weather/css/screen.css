@@ -44,9 +44,7 @@ nav ul li {
 nav {
   position: fixed;
   bottom: 0;
-  left: 10px;
   background-color: #0e89d5;
- line-height: 10px;
   width: 100%;
 }
 /*apply flex properties to the page-nav id*/
@@ -85,7 +83,6 @@ footer{
   font-size: 2em;
   font-weight:700;
   text-align:center;
-  margin-left: -500px;
   margin-top: -38px;
 }
 /*increase the logo*/
@@ -150,6 +147,10 @@ text-align: center;
 
   align-content: flex-end;
 }
+section p {
+  display: inline-block;
+  list-style: none;
+}
 /***************************************************
 4a. Large screens begin at 795px approximately 39.75em (1 em = 20px)
 **********************************************/
@@ -165,8 +166,10 @@ text-align: center;
     list-style: none;
   }
 
-  nav {
+  #page-nav {
     position: relative;
+    font-size: inherit;
+    width: inherit;
   }
 }
 
