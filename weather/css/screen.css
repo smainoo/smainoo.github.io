@@ -141,7 +141,7 @@ text-align: center;
 #temp {
   display: flex;
   flex-flow: column wrap;
-  padding-right: 500px;
+  padding-right: 200px;
   padding-left: 100px;
 
   align-content: flex-end;
@@ -151,6 +151,7 @@ text-align: center;
   flex-flow: column wrap;
   flex-direction: column;
   justify-content: center;
+  padding-right: 100px;
 
   align-content: flex-end;
 }
