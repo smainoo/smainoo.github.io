@@ -141,7 +141,7 @@ text-align: center;
 #temp {
   display: flex;
   flex-flow: column wrap;
-  padding-right: 200px;
+  padding-right: 300px;
   padding-left: 100px;
 
   align-content: flex-end;
@@ -152,7 +152,6 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   padding-right: 50px;
-
   align-content: flex-end;
 }
 section p {
