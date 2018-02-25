@@ -158,6 +158,9 @@ section p {
   display: inline-block;
   list-style: none;
 }
+h2 {
+  display: none;
+}
 /***************************************************
 4a. Large screens begin at 795px approximately 39.75em (1 em = 20px)
 **********************************************/
@@ -178,5 +181,10 @@ section p {
     font-size: inherit;
     width: inherit;
   }
+}
+
+/*Show headings on big screen*/
+h2 {
+  display: contents;
 }
 
