@@ -70,6 +70,11 @@ a:visited{
 
 
 }
+#page-nav {
+  position: fixed;
+  font-size: inherit;
+  width: inherit;
+}
 
 /*set the footer to be visible*/
 footer{
