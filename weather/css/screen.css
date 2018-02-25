@@ -151,7 +151,7 @@ text-align: center;
   flex-flow: column wrap;
   flex-direction: column;
   justify-content: center;
-  padding-right: 100px;
+  padding-right: 50px;
 
   align-content: flex-end;
 }
