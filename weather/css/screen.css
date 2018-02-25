@@ -185,6 +185,6 @@ h2 {
 
 /*Show headings on big screen*/
 h2 {
-  display: contents;
+  visibility: visible;
 }
 
