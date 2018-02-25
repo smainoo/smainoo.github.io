@@ -41,7 +41,7 @@ nav ul li {
 }
 /*Increase the heigth of the nav bar*/
 
-nav {
+#page-nav {
   position: fixed;
   bottom: 0;
   background-color: #0e89d5;
@@ -70,11 +70,13 @@ a:visited{
 
 
 }
+/*
 #page-nav {
   position: fixed;
   font-size: inherit;
   width: inherit;
 }
+*/
 
 /*set the footer to be visible*/
 footer{
@@ -171,12 +173,10 @@ section p {
     list-style: none;
   }
 
-/*
   #page-nav {
     position: relative;
     font-size: inherit;
     width: inherit;
   }
 }
-*/
 
