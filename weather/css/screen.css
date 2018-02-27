@@ -184,9 +184,11 @@ h2 {
 }
 
 /*Show headings on big screen*/
+/*
 h2 {
   visibility: visible;
   display: flex;
   flex-wrap: wrap;
 }
+*/
 
