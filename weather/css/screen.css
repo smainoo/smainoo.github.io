@@ -187,6 +187,6 @@ h2 {
 h2 {
   visibility: visible;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
