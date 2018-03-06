@@ -1,0 +1,227 @@
+/********************************
+* Default Styles - Mobile First
+********************************/
+
+body {
+font-family: sans-serif;
+font-size: 18px;
+margin: 0;
+padding: 0;
+}
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-size-adjust: 0.5;
+}
+
+.wrapper {
+display: flex;
+flex-flow: column;
+flex-wrap: nowrap;
+padding: .5em;
+}
+
+h1 {
+font-size: 1.05em;
+/*	line-height: 1.25;*/
+}
+
+
+/*******************************
+* Page Header Styles
+* Background Image
+*******************************/
+
+
+/*	Background Images - use with Small screens */
+
+.page-header {}
+
+
+/*******************************
+* Page Navigation Styles
+*******************************/
+
+.page-nav {
+background-color: rgb(0, 0, 0);
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 100;
+}
+
+.page-nav ul {
+display: flex;
+align-items: stretch;
+height: 2.5em;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.page-nav li {
+flex: 1;
+display: flex;
+justify-content: center;
+}
+
+.page-nav a {
+text-decoration: none;
+color: #fff;
+display: flex;
+flex: 1;
+justify-content: center;
+align-items: center;
+}
+
+
+/********************************
+* Main Content Styles
+********************************/
+
+.main {
+font-size: 1em;
+line-height: 1.25;
+margin: 0 auto;
+position: relative;
+}
+
+.featured-image {
+margin: 1em 0;
+}
+
+.featured-image img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.image-caption {
+padding: .25em 1em;
+font-family: serif;
+font-size: 80%;
+background: rgba(0, 0, 0, .1);
+}
+
+.featured-video {
+display: block;
+width: 100%;
+height: auto;
+}
+
+
+/*******************************
+* Page Footer Styles
+*******************************/
+
+.page-footer {
+background-color: rgba(0, 0, 0, .8);
+color: #fff;
+padding: 0 .5em;
+margin-bottom: 2.5em;
+}
+
+.page-footer ul {
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.page-footer li {
+flex: auto;
+}
+
+.page-footer p {
+margin: 0;
+}
+
+.credits {
+font-size: .8em;
+}
+
+
+/********************************
+* Medium Screen Styles
+* 750px viewport / 18px font = 41.67em
+********************************/
+
+@media (min-width: 41.67em) {
+body {
+font-size: 1.25em;
+}
+h1 {
+font-size: 2em;
+line-height: 1.125;
+}
+/*	Background Images - Use with medium screens */
+.page-header {}
+.page-nav {
+position: relative;
+}
+.page-nav li {
+flex: 0 1 20%;
+}
+.main {
+line-height: 1.375;
+}
+.featured-image {
+margin: 0 1em 1em 0;
+float: left;
+width: 50%;
+}
+.featured-video {
+float: left;
+display: inline-block;
+width: 50%;
+height: auto;
+margin: 0 1em 1em 0;
+}
+.featured-video+p {
+clear: both;
+}
+.page-footer {
+margin-bottom: .5em;
+}
+}
+
+
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
+
+@media (min-width: 66.7em) {
+body {
+font-size: 1.5vw;
+}
+h1 {
+font-size: 3em;
+line-height: 1.05;
+}
+/*	Background Images - Use with large screens */
+.page-header {}
+.page-nav li {
+flex: 0 1 10%;
+}
+.main {
+max-width: 80%;
+padding-right: 2em;
+padding-left: 2em;
+}
+}
