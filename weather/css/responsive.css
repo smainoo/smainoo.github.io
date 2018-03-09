@@ -1,0 +1,15 @@
+
+/* For width smaller than 400px: */
+body {
+  background-repeat: no-repeat;
+  background-image: url('/smainoo.github.io/weather/images/responsive_img/snow.jpg');
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  body {
+    background-image: url('/smainoo.github.io/weather/images/responsive_img/clear.jpg');
+  }
+}
+
+
