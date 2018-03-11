@@ -3,6 +3,7 @@
 body {
   background-repeat: no-repeat;
   background-image: url('/smainoo.github.io/weather/images/responsive_img/snow.jpg');
+  background-color: crimson;
 }
 
 /* For width 400px and larger: */
