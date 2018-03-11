@@ -25,8 +25,6 @@
         <li><a href="/weather/greenville.html" title="Greenville page">Greenville</a></li>
         <li>Springfield</li>
 
-<!--        <img src="images/weather-nav-bar.png" alt="weather navigation bar">-->
-
       </ul>
     </nav>
 
@@ -43,38 +41,69 @@
 
 
 <!--      Small weather conditions content-->
-      <div class="tempTile">
-<!--        <div><img src="images/raindrops.jpg" alt="background-image" title="raindrops"></div>-->
-        <div id="temp"><p id="mainTemp">24&deg;F</p>
-          <p id="max">34&deg;F</p>  <p id="min">21&deg;F</p>
+      <div id="weatherInfo" class="suitImage">
+        <div id="temp">
+          <section id="temps">
+          <h2>Temperature</h2>
+          <p id="mainTemp">24&deg;F</p>
+          <p><span id="max">34&deg;F</span><span id="min">21&deg;F</span></p>
           <p id="feels">Feels Like <span id="feelTemp">21</span>&deg;F</p>
+          </section>
+
+<!--          wind inforation-->
+          <section id="wind">
+            <h2>Wind</h2>
+            <p class="northPoint">N</p>
+            <div id="dial" class="W">
+            </div>
+            <p id="windSpeed">2 mph</p>
+            <ul id="windDirection">
+              <li><b>Direction:</b>NW</li>
+              <li><b>Gusts:</b>5mph</li>
+            </ul>
+          </section>
         </div>
 
-        <div id="wind"><p>2mph</p>
-          <p>Direction:NW</p>
-          <p>Gust:5mph</p>
-        </div>
+      <section id="video">
+    <h2>Video Forecast</h2>
+        <img src="/smainoo.github.io/weather/images/video.png" alt="Video icon">
 
-
-      </div>
-      <div class="videoTile">
-
-      </div>
-<!--      <img src="images/wireframe-small.png" alt="small frame">-->
-<!--      <img src="images/wireframe-large.png" alt="large frame">-->
-<!--      <div id="hourInfo">
-        <section id="hourly">
-         <h2>Hourly Forecast<h2/>
-           <p> 12am: 67F | 1am: 67F | 2am: 69F | 3am: 69F | 4am: 69F | 5am: 70F | 6am: 20 |7am: 21 |8am: 25 | 9am: 28 | 10am: 30&deg; F | 11am: 34 | 12am: 35 | 13am: 37 | 14am: 38 | 15am: 39 | 16am: 39 | 17am: 38 | 18am: 36F | 19am: 34F | 20am: 33F | 21am: 33F | 22am: 31F | 23am: 31F
-
-          </p>
         </section>
-</div>-->
+      </div>
+      <section id="hourlyTemp">
+        <h2>Hourly Forcast</h2>
+        <ul>
+          <li>12am: 21&deg;F</li>
+          <li>1am: 21&deg;F</li>
+          <li>2am: 21&deg;F</li>
+          <li>3am: 20&deg;F</li>
+          <li>4am: 20&deg;F</li>
+          <li>5am: 20&deg;F</li>
+          <li>6am: 20&deg;F</li>
+          <li>7am: 21&deg;F</li>
+          <li>8am: 25&deg;F</li>
+          <li>9am: 28&deg;F</li>
+          <li>10am: 30&deg;F</li>
+          <li>11am: 34&deg;F</li>
+          <li>12pm: 35&deg;F</li>
+          <li>1pm: 37&deg;F</li>
+          <li>2pm: 38&deg;F</li>
+          <li>3pm: 39&deg;F</li>
+          <li>4pm: 39&deg;F</li>
+          <li>5pm: 38&deg;F</li>
+          <li>6pm: 36&deg;F</li>
+          <li>7pm: 34&deg;F</li>
+          <li>8pm: 33&deg;F</li>
+          <li>9pm: 33&deg;F</li>
+          <li>10pm: 31&deg;F</li>
+          <li>11pm: 31&deg;F</li>
 
- </main>
-    <footer>
+        </ul>
+      </section>
+   </main>
+    <footer id="page-footer">
       &copy;2018 Smith Mainoo, About etc...<br>
-      Last updated: 19 February 2018
+      Last updated: 10 March 2018
     </footer>
 
     </div>
