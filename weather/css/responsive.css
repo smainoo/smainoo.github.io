@@ -1,9 +1,12 @@
 
-/* For width smaller than 400px: */
+/* For width smaller than 450px: */
+
+@media screen and (min-width:450px){
 .large {
   background-repeat: no-repeat;
-  background-image: url('/smainoo.github.io/weather/images/responsive_img/clear.jpg');
+  background-image: url('/smainoo.github.io/weather/images/responsive_img/clear417_209.jpg');
 /*  background-color: crimson;*/
+  }
 }
 
 /* For width 400px and larger: */
