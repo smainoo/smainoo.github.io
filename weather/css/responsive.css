@@ -1,16 +1,16 @@
 
 /* For width smaller than 400px: */
-body {
+.tempTile {
   background-repeat: no-repeat;
-  background-image: url('/smainoo.github.io/weather/images/responsive_img/snow.jpg');
+  background-image: url('/smainoo.github.io/weather/images/responsive_img/clear.jpg');
   background-color: crimson;
 }
 
 /* For width 400px and larger: */
 @media only screen and (max-width: 760px)   {
-  body {
+  .tempTile {
     background-image:
-      url('/smainoo.github.io/weather/images/responsive_img/clear%20(2).jpg');
+      url('/smainoo.github.io/weather/images/responsive_img/raindrops.jpg');
     background-color: aqua;
   }
 }
