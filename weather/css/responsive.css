@@ -3,15 +3,16 @@
 .large {
   background-repeat: no-repeat;
   background-image: url('/smainoo.github.io/weather/images/responsive_img/clear.jpg');
-  background-color: crimson;
+/*  background-color: crimson;*/
 }
 
 /* For width 400px and larger: */
 @media only screen and (max-width: 760px)   {
  .large {
+    background-repeat: no-repeat;
     background-image:
       url('/smainoo.github.io/weather/images/responsive_img/raindrops.jpg');
-    background-color: aqua;
+/*    background-color: aqua;*/
   }
 }
 
