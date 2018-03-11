@@ -31,7 +31,14 @@ body{
   margin: 20px;
   padding: 5px;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family: Sansita, Times, serif;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*make the navigation list horizonatl*/
 nav ul li {
   display: inline-block;
@@ -39,7 +46,7 @@ nav ul li {
 
 
 }
-/*Increase the heigth of the nav bar*/
+/*Navigation styles*/
 
 #page-nav {
   position: fixed;
@@ -70,13 +77,70 @@ a:visited{
 
 
 }
-/*
-#page-nav {
-  position: fixed;
-  font-size: inherit;
-  width: inherit;
+
+/*weather information style*/
+
+#weatherInfo {
+  background-size: cover;
 }
-*/
+
+#small, #vidoe, #hourlyTemp {
+  background-color: rgba(200, 200, 200, .6);
+  margin: .2em auto;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+#temps p {
+  text-align: center;
+  margin: .5em 0;
+}
+
+#max {
+  color: #a00;
+  margin-right: .5em;
+}
+
+#min {
+  color: #00a;
+}
+
+#windDirection {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video {
+  text-align: center;
+}
+
+#samll {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1em;
+}
+
+#temps, #wind {
+  flex: 0 1 50%;
+}
+
+#mainTemp {
+  font-size: 4em;
+  margin: 0 !important;
+  padding: .05em;
+}
+
+/*background picture*/
+
+.clouds {
+  background-image: url(/smainoo.github.io/weather/images/clouds.jpg);
+}
+
 
 /*set the footer to be visible*/
 footer{
@@ -84,6 +148,7 @@ footer{
   background-color: #0e89d5;
 
 }
+
 
 /*style the page header with a class*/
 #site-brand{
@@ -146,21 +211,63 @@ text-align: center;
 
   align-content: flex-end;
 }
+
+/*wind information*/
 #wind {
   display: flex;
-  flex-flow: column wrap;
   flex-direction: column;
   justify-content: center;
+  flex-grow: 1;
+/*
   padding-right: 50px;
   align-content: flex-end;
+*/
 }
-section p {
-  display: inline-block;
+
+#wind.northPoint {
+  font-size: smaller;
+  margin: .5em 0 0 0;
+  text-align: center;
+}
+
+#windSpeed {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+}
+
+#dial {
+  height: 150px;
+  width: 150px;
+  background: no-repeat center/85% url('smainoo.github.io/weather/images/wind-pointer.png');
+  z-index: 100;
+  margin: -.6em auto 0;
+}
+
+.north {
+  transform: rotate(0deg);
+}
+
+/*hourly Information*/
+
+#hourly ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  align-items: center;
   list-style: none;
+  padding: .15em;
+  margin: .25em 0;
+  height: 40px;
 }
-h2 {
-  display: none;
-}
+
+#hourly ul li {
+  flex: 0 0 auto;
+  padding: 0 .25em;
+  border-right: 1px solid #000;
+
+
 /***************************************************
 4a. Large screens begin at 795px approximately 39.75em (1 em = 20px)
 **********************************************/
@@ -184,11 +291,6 @@ h2 {
 }
 
 /*Show headings on big screen*/
-/*
-h2 {
-  visibility: visible;
-  display: flex;
-  flex-wrap: wrap;
-}
-*/
+
+
 
