@@ -97,8 +97,8 @@ img{
 }
 
 /* Background pictures for summary */
-.clear {
-  background-image: url("/weather/images/clear.jpg");
+.clouds {
+  background-image: url("/smainoo.github.io/weather/images/responsive_img/clouds800_600.jpg");
 }
 
 
