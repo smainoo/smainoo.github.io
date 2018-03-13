@@ -247,12 +247,12 @@ h1 {
   margin: .5em 0;
 }
 
-#hi {
+#max {
   color: #a00;
   margin-right: .5em;
 }
 
-#lo {
+#min {
   color: #00a;
 }
 
@@ -271,10 +271,10 @@ h1 {
 }
 
 /* *********************************
-*  3c. Hourly Temps
+*  3c. Hourly Temperature
 ********************************* */
 
-#hourly ul {
+#hourlyTemp ul {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
@@ -285,7 +285,7 @@ h1 {
   height: 40px;
 }
 
-#hourly ul li {
+#hourlyTemp ul li {
   flex: 0 0 auto;
   padding: 0 .25em;
   border-right: 1px solid #000;
@@ -315,7 +315,7 @@ The list of changes to make:
 
 @media screen and (min-width: 750px) {
 
-  /* Headings visible - #1 */
+  /* Make Headings visible - #1 */
   h2 {
     display: block;
     margin: .25em 0;
@@ -328,7 +328,7 @@ The list of changes to make:
   }
 
   /* Format tiles - #'s 3, 4, 5, 6 & 7 */
-  #curWeather {
+  #weatherInfo {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 0;
@@ -365,11 +365,11 @@ The list of changes to make:
   }
 
   /* Position wind speed in dial - #10 */
-  #wind-speed {
+  #windSpeed {
     top: 38%;
   }
   /* Change font size - #9 */
-  .site-brand {
+  #site-brand {
     font-size: 5vw;
   }
 
@@ -377,11 +377,9 @@ The list of changes to make:
     font-size: 5em;
   }
 
-/*
-  #locationInfo dl {
+  #locationInfo {
     font-size: inherit;
   }
-*/
 
   /* Set the content and center it - #11 */
   body > div {
@@ -390,11 +388,11 @@ The list of changes to make:
   }
 
   /* Right Arrow in Hourly Temps */
-  #hourly{
+  #hourlyTemp li{
     position: relative;
   }
 
-  #hourly h2::before{
+  #hourlyTemp h2::before{
     content: ">";
     font-size: 2em;
     position: absolute;
