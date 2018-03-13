@@ -5,7 +5,7 @@
 // Variables for Function Use
 const temp = 21;
 const speed = 5;
-const direction = "W";
+const direction = "E";
 
 windDial(direction);
 
