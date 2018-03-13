@@ -270,9 +270,27 @@ text-align: center;
 
 /***************************************************
 4a. Large screens begin at 795px approximately 39.75em (1 em = 20px)
+  List of changes due to screen size:
+  1.  Make section headings visible
+  2. Nav to top
+  3. Temp/Wind/Video in separate boxes
+  4. Temp/Wind/Video in a single container
+  5. Temp/Wind/Video aligned, size same, evenly distributed.
+  6. Temp/Wind/Video share one line
+  7. Hourly forecast inside a box
+  8. Footer has a line above it
+  9. Everything is bigger
+  10. Dial centered in the wind container
+  11. Content centered in the viewport
+  12. Right arrow in the hourly temps
 **********************************************/
 @media screen and (min-width: 39.75em){
-/*  set the content and center it */
+/*  set the content and center it. Show headings*/
+
+  h2 {
+    display: block;
+    margin: .25em 0;
+  }
   body>div{
     max-width: 1100px;
     margin: 0 auto;
@@ -286,11 +304,69 @@ text-align: center;
   #page-nav {
     position: relative;
     font-size: inherit;
-    width: inherit;
+    width: auto;
+  }
+
+  #weatherInfo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    font-size: 5em;
+  }
+
+  #small{
+    border: 0;
+    background-color:   background-color: #ccc7c7;
+    padding-bottom: 0;
+    width: 60%;
+    justify-content: space-around;
+
+  }
+
+  #wind, #temps {
+    flex: 0 0 45%;
+  }
+  #video {
+    width: 28%;
+    margin: 0;
+  }
+
+  #wind,
+  #temps,
+  #video {
+    background-color: rgba(200, 200, 200, .6);
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center; /* Center - #10 */
+  }
+
+  /*Line above footer*/
+  #page-footer{
+    border-top: 4px solid #000;
+  }
+
+/*  position wind speed dial*/
+  #wind-speed {
+    top: 40%
+  }
+  .site-bran {
+    font-size: 5ew;
+  }
+
+  #houlyTemp{
+    position: relative;
+  }
+  #hourly h2::before{
+    content: ">";
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
-/*Show headings on big screen*/
+
+
 
 
 
