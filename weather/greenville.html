@@ -74,34 +74,34 @@ Wind Section is contained here
 
 -->
         <!--      Small weather conditions content-->
-        <div class="tempTile">
-          <!--        <div><img src="images/raindrops.jpg" alt="background-image" title="raindrops"></div>-->
-          <section id="Temperature">
-            <h2>Tempearture</h2>
-          </section>
+        <div id="weatherInfo" class="clouds">
+          <div id="small">
+            <section id="temps">
+              <h2>Temperature</h2>
+              <p id="mainTemp">50&deg;F</p>
+              <p><span id="max">53&deg;F</span><span id="min">36&deg;F</span></p>
+              <p id="feels">Feels Like <span id="feelTemp">30</span>&deg;F</p>
+            </section>
 
-          <div id="temp"><p id="mainTemp">50&deg;F</p>
-            <p id="max">53&deg;F</p>  <p id="min">36&deg;F</p>
-            <p>Feels Like 30&deg;F</p>
+            <!--          wind inforation-->
+            <section id="wind">
+              <h2>Wind</h2>
+              <p class="northPoint">SW</p>
+              <div id="dial" class="sW">
+              </div>
+              <p id="windSpeed">8 mph</p>
+              <ul id="windDirection">
+                <li><b>Direction:</b>SW</li>
+                <li><b>Gusts:</b>5mph</li>
+              </ul>
+            </section>
           </div>
 
+          <section id="video">
+            <h2>Video Forecast</h2>
+            <img src="/smainoo.github.io/weather/images/video.png" alt="Video icon">
 
-          <section id="Wind">
-            <h2>Wind</h2>
           </section>
-
-          <div id="wind"><p>8mph</p>
-            <p>Direction:SW</p>
-            <p>Gust:5mph</p>
-          </div>
-
-
-        </div>
-        <section id="Video">
-        </section>
-        <h2>Video</h2>
-        <div class="videoTile">
-
         </div>
         <!--      <img src="images/wireframe-small.png" alt="small frame">-->
         <!--      <img src="images/wireframe-large.png" alt="large frame">-->
