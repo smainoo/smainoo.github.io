@@ -28,8 +28,7 @@ body{
   font-family: helvitica arial sans-serif;
   font-size: 20px;
   background-color:#fff;
-  margin: 20px;
-  padding: 5px;
+
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: Sansita, Times, serif;
@@ -45,6 +44,12 @@ nav ul li {
   list-style: none;
 
 
+}
+
+#page-header{
+  background-color: #0e89d5;
+  display: flex;
+  align-items: center;
 }
 /*Navigation styles*/
 
@@ -154,8 +159,6 @@ footer{
 #site-brand{
   font-size: 2em;
   font-weight:700;
-  text-align:center;
-  margin-top: -38px;
 }
 /*increase the logo*/
 #logo{
@@ -214,9 +217,10 @@ text-align: center;
 
 /*wind information*/
 #wind {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+/*  justify-content: center;*/
   flex-grow: 1;
 /*
   padding-right: 50px;
@@ -266,6 +270,33 @@ text-align: center;
   flex: 0 0 auto;
   padding: 0 .25em;
   border-right: 1px solid #000;
+}
+
+/*Mobile first Tsyles added*/
+body> div {
+  width: 100vw;
+}
+h2 {
+  display: none;
+}
+
+#page-header img {
+  width: 10%;
+  height: 50%;
+  margin: .5em;
+}
+#site-brand {
+  font-size: 9vw;
+}
+#page-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #0e89d5;
+  width: 100vw;
+  font-size: 3.5vw;
+
+}
 
 
 /***************************************************
@@ -312,6 +343,10 @@ text-align: center;
     justify-content: space-evenly;
     padding: 1em 0;
     font-size: 5em;
+  }
+
+  #locationInfo {
+    font-size: inherit;
   }
 
   #small{
