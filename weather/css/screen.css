@@ -64,7 +64,7 @@ img{
 
 .site-brand {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: ;
 }
 
 /* *********************************
@@ -395,7 +395,7 @@ The list of changes to make:
   #hourlyTemp h2::before{
     content: ">";
     font-size: 2em;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
   }
