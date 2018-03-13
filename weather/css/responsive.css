@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-image: url('/smainoo.github.io/weather/images/responsive_img/clear417_209.jpg');
 */
-/*  background-color: crimson;*/
+  background-color: crimson;
   }
 }
 
@@ -25,12 +25,14 @@
     background-image:
       url('/smainoo.github.io/weather/images/responsive_img/clear564_282.jpg');
 */
-/*    background-color: aqua;*/
+    background-color: aqua;
   }
   .large{
 /*    background-image: none;*/
     display: none;
+    background-color: brown;
   }
+
 }
 
 
