@@ -175,6 +175,7 @@ main{
   background-color: #FFF;
 }
 /*create the tile comtainer*/
+/*
 .tempTile{
   display: flex;
   border:2px solid #000;
@@ -186,6 +187,7 @@ main{
   background-repeat: no-repeat;
   background-size: cover;
 }
+*/
 #mainTemp{
   font-size: 30px;
   color: #000;
@@ -196,6 +198,7 @@ main{
 #min{
   color: #00F;
 }
+/*
 .videoTile{
   border:2px solid #000;
   padding: 150px;
@@ -205,6 +208,7 @@ background-image: url(/weather/images/video.png);
   background-repeat: no-repeat;
   background-position: center;
 text-align: center;
+*/
 }
 #temp {
   display: flex;
