@@ -3,13 +3,15 @@
 
 @media only screen and (min-width:401px) {
 .small{
-    background-image: none;
+/*    background-image: none;*/
     display: none;
   }
 .large {
   display: block;
+/*
   background-repeat: no-repeat;
   background-image: url('/smainoo.github.io/weather/images/responsive_img/clear417_209.jpg');
+*/
 /*  background-color: crimson;*/
   }
 /*}*/
@@ -18,13 +20,15 @@
 @media only screen and (max-width: 400px)   {
  .small {
    display: block;
+/*
     background-repeat: no-repeat;
     background-image:
       url('/smainoo.github.io/weather/images/responsive_img/clear564_282.jpg');
+*/
 /*    background-color: aqua;*/
   }
   .large{
-    background-image: none;
+/*    background-image: none;*/
     display: none;
   }
 }
