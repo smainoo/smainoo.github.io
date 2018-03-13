@@ -395,8 +395,8 @@ The list of changes to make:
   #hourlyTemp h2::before{
     content: ">";
     font-size: 2em;
-    position: relative;
+    position: absolute;
     right: 0;
-    top: 0;
+/*    top: 0;*/
   }
 }
