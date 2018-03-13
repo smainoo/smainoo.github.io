@@ -354,7 +354,7 @@ The list of changes to make:
   /* Format tiles - #'s 3, 4, 5, 6 & 7 */
   #weatherInfo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 1em 0;
   }
   #small {
