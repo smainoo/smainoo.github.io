@@ -1,99 +1,243 @@
-/*This is my screen file for the weather site*/
+/*The Weather Site*/
 
-/*Import the Sansita font from google fonts. Import must be first in a stlyesheet*/
+/* *********************************
+* Table of Contents
+* 1.  Imports
+* 2.  General Styles
+* 2a.   Navigation
+* 2b.   Current Weather
+* 2c.   Wind Styles
+* 3.  Mobile First Styles
+* 3a.   Location Information
+* 3b.   Weather Tiles
+* 3c.   Hourly Temps
+* 4.  Large Screen Styles
+********************************* */
+
+/* *********************************
+*  1. Imports
+********************************* */
+
+/* Sansita font from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
-@import url('normalize.css');
 
-/*Table of Contents
+/* Add Normalize Code - https://necolas.github.io/normalize.css/ */
+@import url('/weather/css/normalize.css');
 
+/* *********************************
+*  2. General Styles
+********************************* */
 
-1. General Rules
-2. Mobile First Rules
-2a. Layout
-3. Large Screen Rules
-3a. Layout
-4a. Large Screens
-
-*/
-
-/*General Rules*/
-* {
-  box-sizing: border-box; /* changes width property to total width instead of content width*/
-}
-*:before, *:after{
+html * {
   box-sizing: border-box;
 }
 
-body{
-  font-family: helvitica arial sans-serif;
-  font-size: 20px;
-  background-color:#fff;
-
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6 {
+
+body {
+  font-size: 20px;
+  font-family: helvetica, arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Sansita, Times, serif;
 }
 
-img {
+img{
   max-width: 100%;
   height: auto;
 }
-/*make the navigation list horizonatl*/
-nav ul li {
-  display: inline-block;
-  list-style: none;
 
-
-}
-
-#page-header{
+#page-header {
   background-color: #0e89d5;
   display: flex;
   align-items: center;
 }
-/*Navigation styles*/
 
-#page-nav {
-  position: fixed;
-  bottom: 0;
-  background-color: #0e89d5;
-  width: 100%;
-}
-/*apply flex properties to the page-nav id*/
-a:link{
-  color:#FFF;
-
+.site-brand {
+  font-size: 2em;
+  font-weight: 600;
 }
 
-a:active{
-  color:#FFF;
-
+/* *********************************
+*  2a. General Navigation Styles
+********************************* */
+#page-nav ul {
+  padding: 0;/* Added */
+  margin: 0;/* Added */
+  list-style: none;
+  display: flex;/* Added */
+  justify-content: space-around;/* Added */
 }
 
-a:visited{
-  color:#FFF;
-
+#page-nav ul li {
+  min-height: 40px;
 }
 
-#page-nav ul{
-  display: flex;
-  justify-content: space-around;
-  color: #FFF;
-
-
+#page-nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 1em;
 }
 
-/*weather information style*/
-
+/* *********************************
+*  2b. Current Weather Styles
+********************************* */
 #weatherInfo {
   background-size: cover;
 }
 
-#small, #vidoe, #hourlyTemp {
+/* Background pictures for summary */
+.clear {
+  background-image: url("/weather/images/clear.jpg");
+}
+
+
+
+/* *********************************
+*  2c. Wind Styles
+********************************* */
+
+#wind .northPoint {
+  font-size: smaller;
+  margin: .5em 0 0 0;
+  text-align: center;
+}
+
+#wind {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#windSpeed {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+}
+
+#dial {
+  height: 150px;
+  width: 150px;
+  background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+  z-index: 100;
+  margin: -.6em auto 0;
+}
+
+/* Rotate dial to wind direction */
+
+.north {
+  transform: rotate(0deg);
+}
+
+
+
+/* *************************************
+* 3. Mobile First Styles
+************************************* */
+
+body > div {
+  width: 100vw;
+}
+
+h2 {
+  display: none;
+}
+
+#page-header img {
+  width: 10%;
+  height: 50%;
+  margin-right: .5em;
+}
+
+.site-brand {
+  font-size: 9vw;
+}
+
+#page-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #0e89d5;
+  width: 100vw;
+  font-size: 3.5vw;
+  /* z-index: 100;*/
+}
+
+/* *********************************
+*  3a. Location Information
+********************************* */
+
+h1 {
+  margin: .15em 0;
+  padding-left: 6px;
+}
+
+#locationInfo dl {
+  display: flex;
+  font-size: 3.25vw;
+  margin: .5em 0;
+}
+
+#locationInfo dt,
+#locationInfo dd {
+  padding: 0;
+  margin: 0;
+}
+
+#locationInfo dt {
+  font-weight: 800;
+  padding: 0 6px;
+}
+
+#locationInfo dd {
+  padding-right: .25em;
+  border-right: 1px solid #000;
+}
+
+#locationInfo dd:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+/* *********************************
+*  3b. Weather Tiles
+********************************* */
+#small,
+#video,
+#hourly {
   background-color: rgba(200, 200, 200, .6);
   margin: .2em auto;
   border: 1px solid;
   border-radius: 15px;
+}
+
+#small {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1em;
+}
+
+#temps,
+#wind {
+  flex: 0 1 50%;
+}
+
+#mainTemp {
+  font-size: 4em;
+  margin: 0 !important;
+  padding: .05em;
 }
 
 #temps p {
@@ -101,12 +245,12 @@ a:visited{
   margin: .5em 0;
 }
 
-#max {
+#hi {
   color: #a00;
   margin-right: .5em;
 }
 
-#min {
+#lo {
   color: #00a;
 }
 
@@ -124,140 +268,9 @@ a:visited{
   text-align: center;
 }
 
-#samll {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1em;
-}
-
-#temps, #wind {
-  flex: 0 1 50%;
-}
-
-#mainTemp {
-  font-size: 4em;
-  margin: 0 !important;
-  padding: .05em;
-}
-
-/*background picture*/
-
-.clouds {
-  background-image: url(/smainoo.github.io/weather/images/clouds.jpg);
-}
-
-
-/*set the footer to be visible*/
-footer{
-  margin-bottom: 2em;
-  background-color: #0e89d5;
-
-}
-
-
-/*style the page header with a class*/
-#site-brand{
-  font-size: 2em;
-  font-weight:700;
-}
-/*increase the logo*/
-#logo{
-  font-size: 4em;
-  text-align: left;
-}
-/*change header background color*/
-header{
-  background-color: #0e89d5;
-  height: auto;
-}
-/*background color for main*/
-main{
-  background-color: #FFF;
-}
-/*create the tile comtainer*/
-/*
-.tempTile{
-  display: flex;
-  border:2px solid #000;
-  text-align: center;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: #ccc7c7;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
-#mainTemp{
-  font-size: 30px;
-  color: #000;
-}
-#max{
-  color: #F00;
-}
-#min{
-  color: #00F;
-}
-/*
-.videoTile{
-  border:2px solid #000;
-  padding: 150px;
-  margin: 5px;
-  border-radius: 10px;
-background-image: url(/weather/images/video.png);
-  background-repeat: no-repeat;
-  background-position: center;
-text-align: center;
-*/
-}
-#temp {
-  display: flex;
-  flex-flow: column wrap;
-  padding-right: 300px;
-  padding-left: 100px;
-
-  align-content: flex-end;
-}
-
-/*wind information*/
-#wind {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-/*  justify-content: center;*/
-  flex-grow: 1;
-/*
-  padding-right: 50px;
-  align-content: flex-end;
-*/
-}
-
-#wind.northPoint {
-  font-size: smaller;
-  margin: .5em 0 0 0;
-  text-align: center;
-}
-
-#windSpeed {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 30%;
-}
-
-#dial {
-  height: 150px;
-  width: 150px;
-  background: no-repeat center/85% url('smainoo.github.io/weather/images/wind-pointer.png');
-  z-index: 100;
-  margin: -.6em auto 0;
-}
-
-.north {
-  transform: rotate(0deg);
-}
-
-/*hourly Information*/
+/* *********************************
+*  3c. Hourly Temps
+********************************* */
 
 #hourly ul {
   display: flex;
@@ -276,93 +289,58 @@ text-align: center;
   border-right: 1px solid #000;
 }
 
-/*Mobile first Tsyles added*/
-body> div {
-  width: 100vw;
-}
-h2 {
-  display: none;
-}
-
-#page-header img {
-  width: 10%;
-  height: 50%;
-  margin: .5em;
-}
-#site-brand {
-  font-size: 9vw;
-}
-#page-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+footer {
+  margin-bottom: 2em;
   background-color: #0e89d5;
-  width: 100vw;
-  font-size: 3.5vw;
-
 }
 
+/* *********************************
+*  4. Large Screens - 750px / 37.5em
+The list of changes to make:
+1. Make section headings visible
+2. Nav to top
+3. T/W/V in separate boxes
+4. T/W/V in a single container
+5. T/W/V aligned, size same, evenly distributed.
+6. T/W/V share one line
+7. Hourly forecast inside a box
+8. Footer has a line above it
+9. Everything is bigger
+10. Dial centered in the wind container
+11. Content centered in the viewport
+12. Right arrow in the hourly temps
+********************************* */
 
-/***************************************************
-4a. Large screens begin at 795px approximately 39.75em (1 em = 20px)
-  List of changes due to screen size:
-  1.  Make section headings visible
-  2. Nav to top
-  3. Temp/Wind/Video in separate boxes
-  4. Temp/Wind/Video in a single container
-  5. Temp/Wind/Video aligned, size same, evenly distributed.
-  6. Temp/Wind/Video share one line
-  7. Hourly forecast inside a box
-  8. Footer has a line above it
-  9. Everything is bigger
-  10. Dial centered in the wind container
-  11. Content centered in the viewport
-  12. Right arrow in the hourly temps
-**********************************************/
-@media screen and (min-width: 39.75em){
-/*  set the content and center it. Show headings*/
+@media screen and (min-width: 750px) {
 
+  /* Headings visible - #1 */
   h2 {
     display: block;
     margin: .25em 0;
   }
-  body>div{
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  section p {
-    display: inline-block;
-    list-style: none;
-  }
-
+  /* Nav to top - #2 */
   #page-nav {
     position: relative;
     font-size: inherit;
     width: auto;
   }
 
-  #weatherInfo{
+  /* Format tiles - #'s 3, 4, 5, 6 & 7 */
+  #curWeather {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 0;
-    font-size: 5em;
   }
-
-  #locationInfo {
-    font-size: inherit;
-  }
-
-  #small{
+  #small {
     border: 0;
-    background-color:   background-color: #ccc7c7;
+    background-color: transparent;
     padding-bottom: 0;
-    width: 60%;
+    margin: 0;
+    width: 66.66666666%;
     justify-content: space-around;
-
   }
-
-  #wind, #temps {
+  #wind,
+  #temps {
     flex: 0 0 45%;
   }
   #video {
@@ -379,22 +357,41 @@ h2 {
     text-align: center; /* Center - #10 */
   }
 
-  /*Line above footer*/
+  /* Line above footer - # 8 */
   #page-footer{
     border-top: 4px solid #000;
   }
 
-/*  position wind speed dial*/
+  /* Position wind speed in dial - #10 */
   #wind-speed {
-    top: 38%
+    top: 38%;
   }
-  .site-bran {
-    font-size: 5ew;
+  /* Change font size - #9 */
+  .site-brand {
+    font-size: 5vw;
   }
 
-  #houlyTemp{
+  #mainTemp {
+    font-size: 5em;
+  }
+
+/*
+  #locationInfo dl {
+    font-size: inherit;
+  }
+*/
+
+  /* Set the content and center it - #11 */
+  body > div {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Right Arrow in Hourly Temps */
+  #hourly{
     position: relative;
   }
+
   #hourly h2::before{
     content: ">";
     font-size: 2em;
@@ -403,9 +400,3 @@ h2 {
     top: 0;
   }
 }
-
-
-
-
-
-
