@@ -67,6 +67,9 @@ img{
   font-weight: ;
 }
 
+/*pointer rotation*/
+
+
 /* *********************************
 *  2a. General Navigation Styles
 ********************************* */
@@ -141,7 +144,28 @@ img{
   transform: rotate(0deg);
 }
 
+.northwest {
+  transform: rotate(45deg);
+}
+.west {
+  transform: rotate(90deg);
+}
+.southwest {
+  transform: rotate(135deg);
+}
+.south {
+  transform: rotate(180deg);
+}
+.southeast {
+  transform: rotate(225deg);
+}
+.east {
+  transform: rotate(270deg);
+}
 
+.northeast {
+  transform: rotateX(315deg);
+}
 
 /* *************************************
 * 3. Mobile First Styles
