@@ -161,7 +161,7 @@ h2 {
   margin-right: .5em;
 }
 
-.site-brand {
+#site-brand {
   font-size: 9vw;
 }
 
@@ -184,11 +184,12 @@ h1 {
   padding-left: 6px;
 }
 
-#locationInfo dl {
+#locationInfo {
   display: flex;
   font-size: 3.25vw;
   margin: .5em 0;
 }
+/*
 
 #locationInfo dt,
 #locationInfo dd {
@@ -210,6 +211,7 @@ h1 {
   padding-right: 0;
   border-right: none;
 }
+*/
 
 /* *********************************
 *  3b. Weather Tiles
