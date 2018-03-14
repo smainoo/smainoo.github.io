@@ -6,6 +6,8 @@
 const temp = 21;
 const speed = 5;
 const direction = "E";
+let weatherInfo = "clouds";
+let weatherClass = getCondition(weatherInfo);
 
 windDial(direction);
 
@@ -30,7 +32,7 @@ const feelTemp = document.getElementById('feelTemp');
 
 //display the windchill
 console.log(wc);
-  wc = 'feels like:' + wc '&deg; F';
+  wc = 'feels like: ' + wc + '&deg; F';
 
 feelTemp.innerHTML = wc;
 }
@@ -80,4 +82,29 @@ function windDial(direction){
       dial.setAttribute("class", "w");
       break;
   }
+}
+
+//get condition function
+
+function getCondition (weatherInfo){
+  if (weatherInfo.includes('clouds') || weatherInfo.includes('overcast')){
+    return 'cloud'
+  }
+}
+
+
+//change summary image function
+
+function changeSummaryImage (weatherClass){
+  //identify the html element for the correct css rule to change the background
+  const weatherInfo = document.getElementById('weatherInfo');
+
+  switch(weatherClass){
+    case "cloud":
+      weatherInfo.setAttribute('class', 'cloud');
+      console.log ('weatherClass');
+      break;
+
+  }
+
 }

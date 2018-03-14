@@ -103,6 +103,18 @@ img{
 .clouds {
   background-image: url("/smainoo.github.io/weather/images/responsive_img/clouds800_600.jpg");
 }
+.clear {
+  background-image: url("/smainoo.github.io/weather/images/responsive_img/clear417_209.jpg");
+}
+.fog {
+  background-image: url("/smainoo.github.io/weather/images/responsive_img/fog400_387.jpg");
+}
+rain {
+  background-image: url("/smainoo.github.io/weather/images/responsive_img/rain150_100.jpg");
+}
+.snow {
+  background-image: url("/smainoo.github.io/weather/images/responsive_img/snow133_200.jpg");
+}
 
 
 
@@ -422,5 +434,21 @@ The list of changes to make:
     position: absolute;
     right: 0;
 /*    top: 0;*/
+  }
+
+  .clouds {
+    background-image: url("/smainoo.github.io/weather/images/responsive_img/clouds800_600.jpg");
+  }
+  .clear {
+    background-image: url("/smainoo.github.io/weather/images/responsive_img/clear564_282.jpg");
+  }
+  .fog {
+    background-image: url("/smainoo.github.io/weather/images/responsive_img/fog400_387.jpg");
+  }
+  rain {
+    background-image: url("/smainoo.github.io/weather/images/responsive_img/raindrops640_426.jpg");
+  }
+  .snow {
+    background-image: url("/smainoo.github.io/weather/images/responsive_img/snow133_200.jpg");
   }
 }
