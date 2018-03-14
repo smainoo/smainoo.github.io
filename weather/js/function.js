@@ -14,7 +14,8 @@ windDial(direction);
 //call the windchill function
 buildWC(speed, temp);
 
-
+//call summary image
+changeSummaryImage(weatherClass);
 
 // This function will calculate the wind chill temperature
 function buildWC(speed, temp){
