@@ -30,6 +30,7 @@ const feelTemp = document.getElementById('feelTemp');
 
 //display the windchill
 console.log(wc);
+  wc = 'feels like:' + wc '&deg; F';
 
 feelTemp.innerHTML = wc;
 }
