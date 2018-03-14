@@ -103,7 +103,7 @@ function changeSummaryImage (weatherClass){
   switch(weatherClass){
     case "cloud":
       weatherInfo.setAttribute('class', 'cloud');
-      console.log ('weatherClass');
+      console.log (weatherClass);
       break;
 
   }
