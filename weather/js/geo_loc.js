@@ -32,16 +32,16 @@ function getGeoLocation(){
 
 }
 
-////get Data from API
-//function getData(LOCALE) {
-//  const WU_API_KEY = '806d4d24f6e48d29';
-//  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/q/" + LOCALE + ".json";
-//  fetch(URL)
-//    .then(response => response.json())
-//    .then(function (data) {
-//    console.log('Json object from getData function:');
-//    console.log(data);
-//    displayData(data);
-//  })
-//    .catch(error => console.log('There was an error: ', error))
-//} // end getData function
+//get Data from API
+function getData(LOCALE) {
+  const WU_API_KEY = '806d4d24f6e48d29';
+  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/q/" + LOCALE + ".json";
+  fetch(URL)
+    .then(response => response.json())
+    .then(function (data) {
+    console.log('Json object from getData function:');
+    console.log(data);
+    displayData(data);
+  })
+    .catch(error => console.log('There was an error: ', error))
+} // end getData function

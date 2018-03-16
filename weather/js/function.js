@@ -123,3 +123,8 @@ function getData(LOCALE) {
   })
     .catch(error => console.log('There was an error: ', error))
 } // end getData function
+
+//Dispaly data function
+function displayData(conditions){
+  document.getElementById("id in html doc").innerHTML = data.current_observation.display_location."id in html used"
+}
