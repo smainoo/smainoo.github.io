@@ -451,4 +451,8 @@ The list of changes to make:
   .snow {
     background-image: url("/smainoo.github.io/weather/images/responsive_img/snow133_200.jpg");
   }
+  
+  .hide{
+    display: none;
+  }
 }
