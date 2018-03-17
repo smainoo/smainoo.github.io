@@ -6,7 +6,7 @@
 const temp = 21;
 const speed = 5;
 const direction = "W";
-let weatherInfo = "snow";
+let weatherInfo = "cloud";
 let weatherClass = getCondition(weatherInfo);
 
 windDial(direction);
@@ -95,7 +95,7 @@ function getCondition (weatherInfo){
     return 'rain'
   }
   else if (weatherInfo.includes('snow') || weatherInfo.includes('flurry')){
-    return 'snow123'
+    return 'snow'
   }
   else if (weatherInfo.includes('fog') || weatherInfo.includes('foggy')){
     return 'fog'
@@ -115,7 +115,28 @@ function changeSummaryImage (weatherClass){
       console.log (weatherClass);
       break;
 
+    case "rain":
+      weatherInfo.setAttribute('class', 'rain');
+      console.log (weatherClass);
+      break;
+
+    case "fog":
+      weatherInfo.setAttribute('class', 'fog');
+      console.log (weatherClass);
+      break;
+
+    case "snow":
+      weatherInfo.setAttribute('class', 'snow');
+      console.log (weatherClass);
+      break;
+
+    case "clear":
+      weatherInfo.setAttribute('class', 'clear');
+      console.log (weatherClass);
+      break;
+
   }
+
 
 }
 
