@@ -5,8 +5,8 @@
 // Variables for Function Use
 const temp = 21;
 const speed = 5;
-const direction = "E";
-let weatherInfo = "rain";
+const direction = "W";
+let weatherInfo = "snow";
 let weatherClass = getCondition(weatherInfo);
 
 windDial(direction);

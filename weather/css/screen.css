@@ -21,7 +21,7 @@
 /* Sansita font from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
-/* Add Normalize Code - https://necolas.github.io/normalize.css/ */
+/* Add Normalize Code - https://smainoo.github.io/normalize.css/ */
 @import url('/weather/css/normalize.css');
 
 /* *********************************
@@ -152,30 +152,30 @@ rain {
 
 /* Rotate dial to wind direction */
 
-.north {
+.n {
   transform: rotate(0deg);
 }
 
-.northwest {
+.nw {
   transform: rotate(45deg);
 }
-.west {
+.w {
   transform: rotate(90deg);
 }
-.southwest {
+.sw {
   transform: rotate(135deg);
 }
-.south {
+.s {
   transform: rotate(180deg);
 }
-.southeast {
+.se {
   transform: rotate(225deg);
 }
-.east {
+.e {
   transform: rotate(270deg);
 }
 
-.northeast {
+.ne {
   transform: rotateX(315deg);
 }
 
@@ -451,7 +451,7 @@ The list of changes to make:
   .snow {
     background-image: url("/smainoo.github.io/weather/images/responsive_img/snow133_200.jpg");
   }
-  
+
   .hide{
     display: none;
   }
