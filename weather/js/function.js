@@ -6,7 +6,7 @@
 const temp = 21;
 const speed = 5;
 const direction = "E";
-let weatherInfo = "clouds";
+let weatherInfo = "rain";
 let weatherClass = getCondition(weatherInfo);
 
 windDial(direction);
