@@ -95,7 +95,7 @@ function getCondition (weatherInfo){
     return 'rain'
   }
   else if (weatherInfo.includes('snow') || weatherInfo.includes('flurry')){
-    return 'snow'
+    return 'snow123'
   }
   else if (weatherInfo.includes('fog') || weatherInfo.includes('foggy')){
     return 'fog'
