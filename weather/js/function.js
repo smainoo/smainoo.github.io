@@ -91,6 +91,15 @@ function getCondition (weatherInfo){
   if (weatherInfo.includes('clouds') || weatherInfo.includes('overcast')){
     return 'cloud'
   }
+  else if (weatherInfo.includes('rain') || weatherInfo.includes('rainy')){
+    return 'rain'
+  }
+  else if (weatherInfo.includes('snow') || weatherInfo.includes('flurry')){
+    return 'snow'
+  }
+  else if (weatherInfo.includes('fog') || weatherInfo.includes('foggy')){
+    return 'fog'
+  }
 }
 
 
@@ -124,7 +133,7 @@ function getData(LOCALE) {
     .catch(error => console.log('There was an error: ', error))
 } // end getData function
 
-//Dispaly data function
-function displayData(conditions){
-  document.getElementById("id in html doc").innerHTML = data.current_observation.display_location."id in html used"
-}
+////Dispaly data function
+//function displayData(conditions){
+//  document.getElementById("clear").innerHTML = data.current_observation.display_location."clear"
+//}
