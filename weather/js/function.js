@@ -6,7 +6,7 @@
 const temp = 21;
 const speed = 5;
 const direction = "W";
-let weatherInfo = "cloud";
+let weatherInfo = "snow";
 let weatherClass = getCondition(weatherInfo);
 
 windDial(direction);
@@ -108,6 +108,7 @@ function getCondition (weatherInfo){
 function changeSummaryImage (weatherClass){
   //identify the html element for the correct css rule to change the background
   const weatherInfo = document.getElementById('weatherInfo');
+  console.log(weatherClass);
 
   switch(weatherClass){
     case "cloud":
