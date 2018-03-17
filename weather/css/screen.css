@@ -22,7 +22,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* Add Normalize Code - https://smainoo.github.io/normalize.css/ */
-@import url('/weather/css/normalize.css');
+@import url('normalize.css');
 
 /* *********************************
 *  2. General Styles
