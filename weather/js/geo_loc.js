@@ -9,9 +9,9 @@ getGeoLocation();
 //longitude and latitude function for current location
 
 function getGeoLocation(){
-  const STATUS = document.getElementById('status');
-  STATUS.innerHTML ='Getting Location...';
-console.log (navigator.geolocation);
+//  const STATUS = document.getElementById('status');
+//  STATUS.innerHTML ='Getting Location...';
+//console.log (navigator.geolocation);
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
       const LAT = position.coords.latitude;
@@ -33,15 +33,15 @@ console.log (navigator.geolocation);
 }
 
 //get Data from API
-function getData(LOCALE) {
-  const WU_API_KEY = '806d4d24f6e48d29';
-  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/q/" + LOCALE + ".json";
-  fetch(URL)
-    .then(response => response.json())
-    .then(function (data) {
-    console.log('Json object from getData function:');
-    console.log(data);
-    displayData(data);
-  })
-    .catch(error => console.log('There was an error: ', error))
-} // end getData function
+//function getData(LOCALE) {
+//  const WU_API_KEY = '806d4d24f6e48d29';
+//  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/q/" + LOCALE + ".json";
+//  fetch(URL)
+//    .then(response => response.json())
+//    .then(function (data) {
+//    console.log('Json object from getData function:');
+//    console.log(data);
+//    displayData(data);
+//  })
+//    .catch(error => console.log('There was an error: ', error))
+//} // end getData function

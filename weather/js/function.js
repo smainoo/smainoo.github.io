@@ -33,7 +33,7 @@ const feelTemp = document.getElementById('feelTemp');
 
 //display the windchill
 console.log(wc);
-  wc = 'feels like: ' + wc + '&deg; F';
+  wc = wc; //'feels like: ' +  //+ '&deg; F';
 
 feelTemp.innerHTML = wc;
 }
@@ -161,4 +161,50 @@ function displayData(data){
   noStatus.setAttribute("id", "noStatus");
   const hide = document.getElementById("hideUnhide");
   hide.setAttribute("class", "nothide");
+  const cityState=data.current_observation.display_location.full;
+  console.log(cityState);
+  document.getElementById("cityName").innerHTML=cityState;
+
+  //populate location information
+  const LAT=data.current_observation.display_location.latitude;
+  const LONG=data.current_observation.display_location.longitude;
+  document.getElementById("location").innerHTML="<b>Location: </b>" + LAT + "&deg;N, " + LONG + "&deg;W";
+
+  const zip=data.current_observation.display_location.zip;
+  console.log(zip);
+  document.getElementById("zip").innerHTML="<b>Zip: </b>" + zip +" |";
+
+  const elevation=data.current_observation.display_location.elevation;
+  console.log(elevation);
+  document.getElementById("elevation").innerHTML="<b>Elevation: </b>" + Math.round(elevation * 3.28) + "ft. |";
+
+  //populate windchill information and temperature information
+  const temp=data.current_observation.temp_f;
+  console.log(temp);
+  document.getElementById("mainTemp").innerHTML=Math.round(temp)+'&deg;F';
+
+  const speed=data.current_observation.wind_mph;
+  console.log(speed);
+  document.getElementById("windSpeed").innerHTML=speed+ " mph";
+
+  buildWC(speed, temp);
+  console.log(buildWC);
+
+  const high=data.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
+  console.log(high);
+  document.getElementById("max").innerHTML=Math.round(high);
+
+  const low=data.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
+  console.log(low);
+  document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
+
+  const gusts=data.current_observation.wind_gust_mph;
+  console.log(gusts);
+  document.getElementById("gust").innerHTML="<b>Gusts:</b>" + gusts + "mph";
+
+  const direction=data.current_observation.wind_dir;
+  console.log(direction);
+  document.getElementById("windDirection").innerHTML="<b>Direction: </b>" + direction;
+
+  windDial(direction);
 }
