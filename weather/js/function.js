@@ -155,7 +155,10 @@ function getData(LOCALE) {
     .catch(error => console.log('There was an error: ', error))
 } // end getData function
 
-////Dispaly data function
-//function displayData(conditions){
-//  document.getElementById("clear").innerHTML = data.current_observation.display_location."clear"
-//}
+//Dispaly data function
+function displayData(data){
+  const noStatus = document.getElementById("status");
+  noStatus.setAttribute("id", "noStatus");
+  const hide = document.getElementById("hideUnhide");
+  hide.setAttribute("class", "nothide");
+}

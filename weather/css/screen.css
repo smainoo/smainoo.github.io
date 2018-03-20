@@ -455,4 +455,8 @@ The list of changes to make:
   .hide{
     display: none;
   }
+
+  .notHide{
+    display:block;
+  }
 }

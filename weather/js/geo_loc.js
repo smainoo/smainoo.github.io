@@ -11,7 +11,7 @@ getGeoLocation();
 function getGeoLocation(){
   const STATUS = document.getElementById('status');
   STATUS.innerHTML ='Getting Location...';
-
+console.log (navigator.geolocation);
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
       const LAT = position.coords.latitude;
