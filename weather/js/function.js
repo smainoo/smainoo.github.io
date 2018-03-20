@@ -220,7 +220,6 @@ function displayData(data){
   let condIcon=data.current_observation.icon_url;
   document.getElementById("conditionIcon").src=condIcon;
 
-
   let footerImage=data.current_observation.image.url;
   console.log(footerImage);
   document.getElementById("footerImage").src=footerImage;
