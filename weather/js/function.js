@@ -207,4 +207,23 @@ function displayData(data){
   document.getElementById("windDirection").innerHTML="<b>Direction: </b>" + direction;
 
   windDial(direction);
+
+
+  let WEATHERCOND=data.current_observation.weather;
+  console.log(WEATHERCOND.toLowerCase());
+  document.getElementById("condition").innerHTML=WEATHERCOND;
+
+  let condResult= getCondition(WEATHERCOND.toLowerCase());
+  console.log(condResult);
+  changeSummaryImage(condResult);
+
+  let condIcon=data.current_observation.icon_url;
+  document.getElementById("conditionIcon").src=condIcon;
+
+
+  let footerImage=data.current_observation.image.url;
+  console.log(footerImage);
+  document.getElementById("footerImage").src=footerImage;
+
+
 }
