@@ -2,20 +2,20 @@
 
 
 
-// Variables for Function Use
-const temp = 21;
-const speed = 5;
-const direction = "W";
-let weatherInfo = "snow";
-let weatherClass = getCondition(weatherInfo);
-
-windDial(direction);
+//// Variables for Function Use
+//const temp = 21;
+//const speed = 5;
+//const direction = "W";
+//let weatherInfo = "snow";
+//let weatherClass = getCondition(weatherInfo);
+//
+//windDial(direction);
 
 //call the windchill function
-buildWC(speed, temp);
+//buildWC(speed, temp);
 
 //call summary image
-changeSummaryImage(weatherClass);
+//changeSummaryImage(weatherClass);
 
 // This function will calculate the wind chill temperature
 function buildWC(speed, temp){
@@ -190,11 +190,11 @@ function displayData(data){
   buildWC(speed, temp);
   console.log(buildWC);
 
-  const high=data.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
+  const high=data.current_observation.forecast_url;
   console.log(high);
   document.getElementById("max").innerHTML=Math.round(high);
 
-  const low=data.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
+  const low=data.current_observation.forecast_url;
   console.log(low);
   document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
 

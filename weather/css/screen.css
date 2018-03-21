@@ -437,19 +437,19 @@ The list of changes to make:
   }
 
   .clouds {
-    background-image: url("/smainoo.github.io/weather/images/responsive_img/clouds800_600.jpg");
+    background-image: url("weather/images/responsive_img/clouds800_600.jpg");
   }
   .clear {
-    background-image: url("/smainoo.github.io/weather/images/responsive_img/clear564_282.jpg");
+    background-image: url("weather/images/responsive_img/clear564_282.jpg");
   }
   .fog {
-    background-image: url("/smainoo.github.io/weather/images/responsive_img/fog400_387.jpg");
+    background-image: url("weather/images/responsive_img/fog400_387.jpg");
   }
   rain {
-    background-image: url("/smainoo.github.io/weather/images/responsive_img/raindrops640_426.jpg");
+    background-image: url("weather/images/responsive_img/raindrops640_426.jpg");
   }
   .snow {
-    background-image: url("/smainoo.github.io/weather/images/responsive_img/snow133_200.jpg");
+    background-image: url("images/responsive_img/snow133_200.jpg");
   }
 
   .hide{
