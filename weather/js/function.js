@@ -17,6 +17,11 @@
 //call summary image
 //changeSummaryImage(weatherClass);
 
+
+////Get the location from API
+//const STATUS = document.getElementById('status');
+//STATUS.innerHTML='Getting Location...';
+
 // This function will calculate the wind chill temperature
 function buildWC(speed, temp){
 const feelTemp = document.getElementById('feelTemp');
@@ -156,11 +161,15 @@ function getData(LOCALE) {
 } // end getData function
 
 //Dispaly data function
+
+//hides and unhides getting location status
 function displayData(data){
   const noStatus = document.getElementById("status");
   noStatus.setAttribute("id", "noStatus");
+
   const hide = document.getElementById("hideUnhide");
-  hide.setAttribute("class", "nothide");
+  hide.setAttribute("class", "notHide");
+
   const cityState=data.current_observation.display_location.full;
   console.log(cityState);
   document.getElementById("cityName").innerHTML=cityState;

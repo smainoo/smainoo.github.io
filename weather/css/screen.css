@@ -101,19 +101,19 @@ img{
 
 /* Background pictures for summary */
 .clouds {
-  background-image: url("/smainoo.github.io/weather/images/responsive_img/clouds800_600.jpg");
+  background-image: url("/weather/images/responsive_img/clouds800_600.jpg");
 }
 .clear {
-  background-image: url("/smainoo.github.io/weather/images/responsive_img/clear417_209.jpg");
+  background-image: url("/weather/images/responsive_img/clear417_209.jpg");
 }
 .fog {
-  background-image: url("/smainoo.github.io/weather/images/responsive_img/fog400_387.jpg");
+  background-image: url("/weather/images/responsive_img/fog400_387.jpg");
 }
 rain {
-  background-image: url("/smainoo.github.io/weather/images/responsive_img/rain150_100.jpg");
+  background-image: url("/weather/images/responsive_img/rain150_100.jpg");
 }
 .snow {
-  background-image: url("/smainoo.github.io/weather/images/responsive_img/snow133_200.jpg");
+  background-image: url("/weather/images/responsive_img/snow133_200.jpg");
 }
 
 
@@ -140,6 +140,11 @@ rain {
   text-align: center;
   position: absolute;
   top: 30%;
+}
+
+#gust {
+  width: 100%;
+  text-align: center;
 }
 
 #dial {
@@ -302,6 +307,7 @@ h1 {
   align-items: center;
 }
 
+
 #video {
   text-align: center;
 }
@@ -451,6 +457,9 @@ The list of changes to make:
   .snow {
     background-image: url("/weather/images/responsive_img/snow133_200.jpg");
   }
+
+
+/*Show and hide 'Getting Location...' information*/
 
   .hide{
     display: none;
