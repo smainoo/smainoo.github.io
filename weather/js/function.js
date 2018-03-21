@@ -190,13 +190,15 @@ function displayData(data){
   buildWC(speed, temp);
   console.log(buildWC);
 
-  const high=data.current_observation.forecast_url;
-  console.log(high);
-  document.getElementById("max").innerHTML=Math.round(high);
 
-  const low=data.current_observation.forecast_url;
-  console.log(low);
-  document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
+  //Cannot find the correct path to dispaly low and high temperature. I made a place holder in the mean time.
+//  const high=data.current_observation.forecast_url;
+//  console.log(high);
+//  document.getElementById("max").innerHTML=Math.round(high);
+//
+//  const low=data.current_observation.forecast_url;
+//  console.log(low);
+//  document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
 
   const gusts=data.current_observation.wind_gust_mph;
   console.log(gusts);
