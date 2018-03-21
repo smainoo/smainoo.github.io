@@ -219,7 +219,7 @@ function displayData(data){
 
   windDial(direction);
 
-
+//get weather conditions
   let WEATHERCOND=data.current_observation.weather;
   console.log(WEATHERCOND.toLowerCase());
   document.getElementById("condition").innerHTML=WEATHERCOND;
@@ -235,5 +235,9 @@ function displayData(data){
   console.log(footerImage);
   document.getElementById("footerImage").src=footerImage;
 
+//  //get hourly temperature from API
+//  const hourly= data.current_observation.hourly_url;
+//  console.log(hourly);
+//  document.getElementById("hourlyTemp").innerHTML="Hourly Forecast" + hourly;
 
 }
