@@ -201,13 +201,13 @@ function displayData(data){
 
 
   //Cannot find the correct path to dispaly low and high temperature. I made a place holder in the mean time.
-  const high=data.current_observation.forecast_url;
+  const high=data.forecast.simpleforecast.forecastday[0].high.fahrenheit;
   console.log(high);
-  document.getElementById("max").innerHTML=Math.round(high);
+  document.getElementById("max").innerHTML=Math.round(high)+'&deg;F';
 
-  const low=data.current_observation.forecast_url;
+  const low=data.forecast.simpleforecast.forecastday[0].low.fahrenheit;
   console.log(low);
-  document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
+  document.getElementById("min").innerHTML=Math.round(low);+'&deg;F';
 
   const gusts=data.current_observation.wind_gust_mph;
   console.log(gusts);
