@@ -149,7 +149,7 @@ function changeSummaryImage (weatherClass){
 //get Data from API
 function getData(LOCALE) {
   const WU_API_KEY = '806d4d24f6e48d29';
-  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/forcast/hourly/q/" + LOCALE + ".json";
+  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/forecast/hourly/q/" + LOCALE + ".json";
   fetch(URL)
     .then(response => response.json())
     .then(function (data) {
@@ -201,13 +201,13 @@ function displayData(data){
 
 
   //Cannot find the correct path to dispaly low and high temperature. I made a place holder in the mean time.
-//  const high=data.current_observation.forecast_url;
-//  console.log(high);
-//  document.getElementById("max").innerHTML=Math.round(high);
-//
-//  const low=data.current_observation.forecast_url;
-//  console.log(low);
-//  document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
+  const high=data.current_observation.forecast_url;
+  console.log(high);
+  document.getElementById("max").innerHTML=Math.round(high);
+
+  const low=data.current_observation.forecast_url;
+  console.log(low);
+  document.getElementById("min").innerHTML=Math.round(low);//+'&deg;F';
 
   const gusts=data.current_observation.wind_gust_mph;
   console.log(gusts);
