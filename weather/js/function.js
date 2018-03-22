@@ -149,7 +149,7 @@ function changeSummaryImage (weatherClass){
 //get Data from API
 function getData(LOCALE) {
   const WU_API_KEY = '806d4d24f6e48d29';
-  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/q/" + LOCALE + ".json";
+  const URL = "https://api.wunderground.com/api/" + WU_API_KEY + "/conditions/forcast/hourly/q/" + LOCALE + ".json";
   fetch(URL)
     .then(response => response.json())
     .then(function (data) {
