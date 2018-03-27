@@ -21,6 +21,10 @@ QUERY.addEventListener("keyup", function () {
 
 }); // ends the eventListener
 
+
+//listen for a click on searcResults
+
+
 // Build the list of matching locations
 function processJSON(json) {
   // Log what is returned
@@ -37,3 +41,22 @@ function processJSON(json) {
   // Inject list into the searchResults section of the web page
   searchResults.innerHTML = list;
 } // ends the processJSON function
+
+//activate event listiner on search result to detect any input
+const SEARCHRESULTS= document.getElementById("searchResults");
+SEARCHRESULTS.addEventListener("click", function(){
+  //set event target to variable
+  let locTarget = event.target.dataset.location;
+  console.log(locTarget);
+
+  //prevent default action
+  event.preventDefault();
+
+  //pass result inti getData function
+  getData(locTarget);
+
+  //hide result list
+  document.getElementById("searchResult").style.display = "none";
+
+})
+
