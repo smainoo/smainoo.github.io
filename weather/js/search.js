@@ -56,7 +56,7 @@ SEARCHRESULTS.addEventListener("click", function(){
   getData(locTarget);
 
   //hide result list
-  document.getElementById("searchResult").style.display = "none";
+  document.getElementById("searchResults").style.display = "none";
 
 })
 
