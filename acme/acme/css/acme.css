@@ -1,0 +1,186 @@
+/*The Acme Site*/
+
+/* *********************************
+* Table of Contents
+* 1.  Imports
+* 2.  General Styles
+* 2a.   Navigation
+* 2b.   Page Styles
+* 3.  Mobile First Styles
+* 4.  Large Screen Styles
+********************************* */
+
+/* *********************************
+*  1. Imports
+********************************* */
+
+/* Sansita font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* Add Normalize Code - https://smainoo.github.io/normalize.css/ */
+@import url('/css/acmeNorm.css');
+
+/* *********************************
+*  2. General Styles
+********************************* */
+
+html * {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: helvetica, arial, sans-serif;
+  background-image: url("/images/site/background.jpg");
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Sansita, Times, serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+#page-header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  background-image: url("/images/site/logo.png");
+  background-repeat: no-repeat;
+}
+
+.site-brand {
+  font-size: 2em;
+  /*  font-weight: 400px;*/
+}
+
+/*pointer rotation*/
+
+
+/* *********************************
+*  2a. General Navigation Styles
+********************************* */
+#page-nav ul {
+  padding: 0;/* Added */
+  margin: 0;/* Added */
+  list-style: none;
+  display: flex;/* Added */
+  justify-content: space-around;/* Added */
+}
+
+#page-nav ul li {
+  min-height: 40px;
+}
+
+#page-nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 1em;
+}
+
+
+/* *************************************
+* 3. Mobile First Styles
+************************************* */
+
+body > div {
+  width: 100vw;
+}
+
+h2 {
+  display: none;
+}
+
+#page-header img {
+  width: 10%;
+  height: 50%;
+  margin-right: .5em;
+}
+
+#site-brand {
+  font-size: 9vw;
+}
+
+#page-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #de2226;
+  width: 100vw;
+  font-size: 3.5vw;
+  /* z-index: 100;*/
+}
+
+
+
+
+
+footer {
+  margin-bottom: 2em;
+  background-color: #ffffff;
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+  /* Make Headings visible - #1 */
+  h2 {
+    display: block;
+    margin: .25em 0;
+  }
+  /* Nav to top - #2 */
+  #page-nav {
+    position: relative;
+    font-size: inherit;
+    width: auto;
+  }
+
+
+  /* Line above footer - # 8 */
+  #page-footer{
+    border-top: 4px solid #000;
+  }
+
+
+  /* Change font size - #9 */
+  #site-brand {
+    font-size: 5vw;
+  }
+
+
+  /* Set the content and center it - #11 */
+  body > div {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+  /*Show and hide 'Getting Location...' information*/
+
+  .hide{
+    display: none;
+  }
+
+  .notHide{
+    display:block;
+  }
+}
