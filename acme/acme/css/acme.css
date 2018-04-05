@@ -55,7 +55,7 @@ img{
   height: auto;
 }
 
-#page-header {
+#pageHeader {
   background-color: #ffffff;
   display: flex;
   align-items: flex-start;
@@ -74,7 +74,7 @@ img{
 /* *********************************
 *  2a. General Navigation Styles
 ********************************* */
-#page-nav ul {
+#pageNav ul {
   padding: 0;/* Added */
   margin: 0;/* Added */
   list-style: none;
@@ -82,11 +82,11 @@ img{
   justify-content: space-around;/* Added */
 }
 
-#page-nav ul li {
+#pageNav ul li {
   min-height: 40px;
 }
 
-#page-nav a {
+#pageNav a {
   text-decoration: none;
   color: #fff;
   display: block;
@@ -106,7 +106,7 @@ h2 {
   display: none;
 }
 
-#page-header img {
+#pageHeader img {
   width: 10%;
   height: 50%;
   margin-right: .5em;
@@ -116,7 +116,7 @@ h2 {
   font-size: 9vw;
 }
 
-#page-nav {
+#pageNav {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -133,7 +133,9 @@ h2 {
 footer {
   margin-bottom: 2em;
   background-color: #ffffff;
+  border-top: 3px solid #000;
 }
+
 
 
 
@@ -145,7 +147,7 @@ footer {
     margin: .25em 0;
   }
   /* Nav to top - #2 */
-  #page-nav {
+  #pageNav {
     position: relative;
     font-size: inherit;
     width: auto;

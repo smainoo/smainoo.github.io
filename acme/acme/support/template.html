@@ -3,25 +3,26 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Acme Page</title>
+    <title>Acme |Homepage</title>
     <meta name="author" content="This website contains pages for the acme website">
     <!--  The meta element below is for responsove behavior-->
     <meta name="viewport" content="width=divice-width">
     <link href="/css/acme.css" rel="stylesheet" type="text/css" media="screen">
     <link href="/css/acmeResp.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="/css/acmeNorm.css" rel="stylesheet" type="text/css">
 
   </head>
 
   <body>
     <div>
-      <header id="page-header">
+      <header id="pageHeader">
 
         <p id="site-brand"></p>
 
       </header>
-      <nav id="page-nav">
+      <nav id="pageNav">
         <ul>
-          <li id="home"><a href="https://smainoo.github.io/" title="go to main homepage">Home</a></li>
+          <li id="home"><a href="/acme.html" title="Acme |Homepage">Home</a></li>
           <li id="anvil"><a href="Anvil.html">Anvil</a></li>
           <li id="explosive"><a href="Explosives.html" title="explosive-page">Explosives</a></li>
           <li id="decoys"><a href="Decoys" title="Decoys-page">Decoys</a></li>
@@ -29,22 +30,17 @@
         </ul>
       </nav>
 
-      <main>
-        <!--      put all content in a container-->
+      <main id="main-content">
 
-
-        <section id="resp">
-          <h1>Content Title Here</h1>
-
-        </section>
-
+        <h1 id="content-title">Content Title Here</h1>
 
       </main>
-      <footer>
-        &copy;2018 Smith Mainoo, About etc...<br>
-        Last updated: March 2018
+      <footer id="footer">
+        &copy;2018 ACME Inc., All rights reserved
+        <p>All images used are All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed</p>
       </footer>
-
-    </div></body>
+     <script src="/js/acme.js"></script>
+    </div>
+  </body>
 
 </html>

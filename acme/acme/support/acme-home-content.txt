@@ -15,13 +15,13 @@ Hero Product Review text
     <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
     <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
   </ul>
-          
+
 Recipe Text
   Pulled Roadrunner BBQ
   Roadrunner Pot Pie
   Roadrunner Soup
   Roadrunner Tacos
-  
+
 Footer Text
 &copy; 2018 ACME, All rights reserved.
 All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
