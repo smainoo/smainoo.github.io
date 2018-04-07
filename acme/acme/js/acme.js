@@ -8,7 +8,7 @@ getData(JSONDATA);
 function getData(data){
   fetch(data)
   .then(response => response.json())
-  .then(function(data){
+  .then(function(JSONDATA){
     console.log('json object from getData function:');
     console.log(data);
     jsonData = data;

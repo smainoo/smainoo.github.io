@@ -1,6 +1,4 @@
-{   "navigation": {
-  Anvils, Explosives, Decoys, Traps
-},
+{
     "Anvils":{
       "name": "Anvil",
       "path": "/acme-project/images/products/anvil.png",

@@ -6,8 +6,8 @@
     <meta id="acme-meta" name="description" content="Acme Home Page">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="/css/acme.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/css/acmeResp.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/acmeResp.css">
+<!--    <link rel="stylesheet" type="text/css" href="/css/acmeResp.css" media="screen">-->
+    <link rel="stylesheet" type="text/css" href="css/acmeNorm.css">
   </head>
 
 
@@ -15,7 +15,7 @@
   <body>
     <div>
       <header id="pageHeader">
-
+        <img id="siteLogo" src="images/site/logo.png" alt="Acme home page logo">
       </header>
 
 
@@ -26,12 +26,13 @@
 
 
       <main>
-        <div id="home-content" class="home-show">
+        <div id="home-content" class="show-home">
           <h1 id="home-title">Welcome to Acme!</h1>
 
-          <section id="description-text">
-            <ul class="description-list">
-              <li><h2 id="description-heading">Acme Rocket</h2></li>
+<!--          Product description-->
+          <section id="desc-text">
+            <ul class="desc-list">
+              <li><h2 id="desc-heading">Acme Rocket</h2></li>
               <li>Quick lighting fuse</li>
               <li>NHTSA-approved seat belts</li>
               <li>Mobile launch stand included</li>
@@ -39,10 +40,11 @@
             </ul>
           </section>
 
-          <div id="recipes-reviews">
-            <section id="featured-recipes">
-              <h3 id="recipe-heading">Featured Recipes</h3>
-              <ul class="recipe-list">
+<!--          recipe reviews-->
+          <div id="rec-reviews">
+            <section id="featured-rec">
+              <h3 id="rec-heading">Featured Recipes</h3>
+              <ul class="rec-list">
                 <li><a href="#"><img id="bbq-image" alt="Pulled Roadrunner BBQ" src="/images/recipes/bbqsand.jpg"></a></li>
                 <li><a href="#">Pulled Roadrunner BBQ</a></li>
 
@@ -57,9 +59,11 @@
               </ul>
             </section>
 
-            <section id="product-review">
-              <h3 id="review-heading">Acme Rocket Reviews</h3>
-              <ul class="review-list">
+<!--            product review section-->
+
+            <section id="prod-review">
+              <h3 id="rev-heading">Acme Rocket Reviews</h3>
+              <ul class="rev-list">
                 <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
                 <li>"That thing was fast!" (4/5)</li>
                 <li>"Talk about fast delivery." (5/5)</li>
@@ -72,26 +76,26 @@
 
 
 
+<!--product page section-->
 
-
-        <div id="product-page" class="content-hide">
-          <section id="left-product">
-            <h1 id="product-name"></h1>
+        <div id="prod-page" class="hide-content">
+          <section id="left-prod">
+            <h1 id="prod-name"></h1>
 
           </section>
 
-          <section id="right-product">
-            <p id="product-description"></p>
-            <p id="product-manufacturer"></p>
-            <p id="product-score"></p>
-            <p id="product-price"></p>
+          <section id="right-prod">
+            <p id="prod-desc"></p>
+            <p id="prod-manufacturer"></p>
+            <p id="prod-score"></p>
+            <p id="prod-price"></p>
           </section>
           <noscript>Javascript must be enabled to use this site</noscript>
         </div>
       </main>
 
 
-      <footer id="siteFooter">
+      <footer id="footer">
 
         &copy;2018 ACME Inc., All rights reserved
         <p>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed</p>
