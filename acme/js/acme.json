@@ -1,0 +1,34 @@
+{
+    "Anvils":{
+      "name": "Anvil",
+      "path": "/acme-project/images/products/anvil.png",
+      "description": "Our 55 lb. hardened steel anvil is great for dropping from heights or placing in the way to block a roadrunner from taking a path. This anvil will take a pounding and keep on being useful for years.",
+      "manufacturer": "Anvil Forge",
+      "price": "50.00",
+      "reviews": "4.5"
+    },
+    "Explosives":{
+      "name": "TNT",
+      "path": "/acme-project/images/products/tnt.png",
+      "description": "The Noblel brand TNT is famous for its power and ability to get the job done. Buried or thrown it is guaranteed to blow up and defeather roadrunners all in one fell swoop.",
+      "manufacturer": "Alfred Nobel",
+      "price": "10.00",
+      "reviews": "5"
+    },
+    "Decoys":{
+      "name": "Roadrunner Decoy",
+      "path": "/acme-project/images/products/roadrunner.jpg",
+      "description": "This decoy is so life like that even we want to capture them. These decoys are sure to lure other road runners in thinking that there is a party going on.",
+      "manufacturer": "Decoys Galore",
+      "price": "15.00",
+      "reviews": "4.7"
+    },
+    "Traps":{
+      "name": "All Purpose Trap",
+      "path": "/acme-project/images/products/trap.jpg",
+      "description": "This all purpose trap comes in a variety of colors and sizes. Great for road runners, rabbits, mice and all other tasty morsels. Made of non-rusting metal alloy, it will last for years. You won't be disappointed.",
+      "manufacturer": "Traps R Us",
+      "price": "20.00",
+      "reviews": "4.6"
+    }
+}

@@ -20,7 +20,7 @@ body {
   margin-bottom: 0;
   padding: 0;
   font-family: helvetica arial sans-serif;
-  background-image: url(acme/images/site/background.jpg);
+  background-image: url(/images/site/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -472,10 +472,6 @@ footer {
 
   #prod-name {
     text-align: left;
-  }
-
-  #product-pic{
-    width: auto;
   }
 
   #right-product {
