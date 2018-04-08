@@ -111,10 +111,9 @@ body>div {
   color: #990033;
   display: flex;
   justify-content: flex-end;
-
   background-image: url(/images/site/feature.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  padding-bottom: 100%;
 
 }
 
@@ -219,6 +218,10 @@ body>div {
   text-align: center;
 }
 
+#product-pic{
+  width: 87%;
+  align-self: center;
+}
 
 #right-prod {
   display: flex;
@@ -358,7 +361,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    background-image: url(images/site/feature.jpg);
+    background-image: url(/images/site/feature.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 140px;
