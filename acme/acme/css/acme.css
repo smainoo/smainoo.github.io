@@ -264,7 +264,7 @@ footer {
     margin-bottom: 0;
     padding: 0; /* ditto for padding */
     font-family: helvetica arial sans-serif; /* changes main font to helvetica */
-    background-image: url(/acme/images/site/background.jpg);
+    background-image: url(/images/site/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 20px;
@@ -358,7 +358,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    background-image: url(/images/site/feature.jpg);
+    background-image: url(images/site/feature.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 140px;
