@@ -41,7 +41,7 @@ function processJSON(data) {
 const NAVLIST = document.getElementById("pageNav");
 
 NAVLIST.addEventListener("click", function(event) {
-  document.getElementById("acme-title").innerHTML="Acme  Home page";
+  document.getElementById("acme-title").innerHTML="Acme | Home page";
   const META = document.getElementById("acme-meta");
   META.setAttribute("content", "Acme Home page");
 
@@ -70,7 +70,7 @@ NAVLIST.addEventListener("click", function(event) {
 
     document.getElementById("prod-name").innerHTML = jsonData.Anvils.name;
     CONIMAGE.setAttribute("src", jsonData.Anvils.path);
-    CONIMAGE.setAttribute("alt", "Acme Anvil")
+    CONIMAGE.setAttribute("alt", "Acme Anvil");
     document.getElementById("prod-desc").innerHTML = jsonData.Anvils.description;
     document.getElementById("prod-manufacturer").innerHTML = "<b>Made By: </b>" + jsonData.Anvils.manufacturer;
     document.getElementById("prod-score").innerHTML = "<b>Reviews: </b>" + jsonData.Anvils.reviews + "/5 stars";
