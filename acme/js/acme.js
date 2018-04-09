@@ -1,5 +1,5 @@
 
-const JSONDATA = "/js.acme.json";
+const JSONDATA = "/js/acme.json";
 let jsonData;
 getData(JSONDATA);
 
