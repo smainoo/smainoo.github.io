@@ -29,13 +29,13 @@ function processJSON(data) {
   // Build an unordered list
   // Use a for loop to include the results in list items
   let list = "<ul>";
-  for (let i = 0, n = 5; i < n; i++) {
-    list += "<li>" + data.navarray[i] + "</li>";
+  for (let i = 0; i < data.navigation.length; i++) {
+    list += "<li>" + data.navigation[i] + "</li>";
   };
   list += "</ul>";
 
 
-  acmeNav.innerHTML = list;
+  pageNav.innerHTML = list;
 }
 
 const NAVLIST = document.getElementById("pageNav");

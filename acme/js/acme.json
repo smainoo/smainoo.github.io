@@ -30,5 +30,6 @@
       "manufacturer": "Traps R Us",
       "price": "20.00",
       "reviews": "4.6"
-    }
+    },
+  navigation: ["Home","Anvils","Explosives","Decoys","Traps" ]
 }
