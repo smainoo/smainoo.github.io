@@ -20,7 +20,7 @@ body {
   margin-bottom: 0;
   padding: 0;
   font-family: helvetica arial sans-serif;
-  background-image: url(/images/site/background.jpg);
+  background-image: url("/images/site/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
