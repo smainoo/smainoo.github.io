@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* Add Normalize Code - https://smainoo.github.io/normalize.css/ */
-@import url('/css/acmeNorm.css');
+@import url('/acme/css/acmeNorm.css');
 
 /* ***************************************
 2. Content page Settings for small screen
