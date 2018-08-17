@@ -13,106 +13,306 @@
 /* ***************************************
 2. Content page Settings for small screen
 *******************************************/
-
-
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 body {
-  margin-bottom: 0;
-  padding: 0;
-  font-family: helvetica arial sans-serif;
-  margin-left: 10px;
-  margin-right: 10px
+  background: #f5f5f5;
+  color: #67727A;
+  font-family: 'Alegreya', sans-serif;
+
 
 }
-
-/*Small Navigation settings*/
-
-* {
-  box-sizing: border-box;
-}
-
-/*Style the header*/
-.header {
-  background-color: aliceblue;
-  padding: 30px;
+h2{
+  font-size: 250%;
+  font-weight: 700;
   text-align: center;
-  color: black;
+  padding-top: 2%;
+  color: #f5f5f5;
 }
 
-/*styl the top navigation bar*/
-.topNav{
-  overflow: hidden;
-  background-color: cadetblue;
+h3{
+  font-size: 175%;
+  line-height: 155%;
+  padding: 5% 0;
+  font-weight: 400;
+  color: #f5f5f5;
 }
 
-/*style the links in the navigation bar*/
-.topNav a{
+p{
+  font-family: 'Alegraya Sans', sans-serif;
+  color: #f5f5f5;
+  font-size: 160%;
+  line-height: 150%;
+  padding-top: 3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+header{
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 86px;
+}
+
+#header-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#logo{
+  margin: 20px;
   float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: white;
+  width: 200px;
+  height: 60px;
+  background-image: url("/EEProductions/images/Welcome/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-section {
-  display: -webkit-flex;
-  display: flex;
-}
+/*Start of Nav styling*/
 
-#wedding {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 20;
-}
+nav {
+  float: right;
+  padding: 25px 20px 0 0;
 
-#parties{
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
+}
+#menu-icon{
+  display:hidden;
+  width: 40px;
+  height: 40px;
+  background-image:url("/EEProductions/images/Welcome/nav.png");
+  background-position: center;
+}
+a:hover#menu-icon{
+  border-radius: 4px 4px 0 0;
+}
+ul{
+  list-style-type: none;
+}
+nav ul li{
+  font-family: 'Alegraya Sans', sans-serif;
+  font-size: 150%;
+  display: inline-block;
+  float: left;
   padding: 10px;
-}
 
-/*style the social media bar*/
-.social {
-  overflow: hidden;
-  background-color: cadetblue;
 }
-
-/*style the socail media links*/
-.social a{
+nav ul li a{
+  color: #f5f5f5;
   text-decoration: none;
+}
+nav ul li a:hover {
+  color: #c3d7df;
+
+}
+.current{
+  color: #c3d7df;
+  font-family:
+}
+/*end of nav style*/
+.banner{
+  width: 100%;
+  background-color: #6991ac;
+
+}
+.banner-inner{
+  width: 1100px;
+  margin: 0 auto;
+
+}
+.inner-wrapper{
   float: left;
-  display: block;
+  width: 100%;
+  background-color: #c3d7df;
+
+}
+article{
+  float: left;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+#about{
+  background-color: #c3d7df;
+}
+aside{
+  float: right;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+#about2{
+  background-color: #c3d7df;
+}
+#testimonial{
+  background-color: darkgray;
+}
+#graduate{
+  background-color: aliceblue;
+}
+.inner-wrapper-2{
+  float: left;
+  width: 100%;
+  background-color: #c3d7df;
+}
+.inner-wrapper-3{
+  float: left;
+  width: 100%;
+  background-color: #c3d7df;
+
+}
+.third{
+  width:32.33%;
+  float: left;
   text-align: center;
-  padding: 14px 16px;
-  color: white;
+  margin: 5px;
 }
 
-
-
-
-
-footer {
-  border-top: 3px solid #000;
-  border-top:3px solid #000;
-  text-align: center;
-  font-size: 20px;
+#contact{
+  background-color: #c3d7df;
+}
+#Client{
+  background-color: #c3d7df;
+}
+#team{
+  background-color: bisque;
+  background-color: #c3d7df;
 }
 
+/*start of footer styles*/
+footer{
+  background-color: #6991ac;
+  width: 100%;
+}
+.social{
+  list-style-type: none;
+  text-align: center;
 
-/*Media query for larger screen*/
+}
+.social li{
+  display: inline;
+}
+.social i{
+  font-size: 460%;
+  margin: 1%;
+  padding: 5% 5% 5% 5%;
+  color: #c3d7df;
+}
+.social i:hover{
+  color: #f5f5f5;
 
-@media screen and (min-width: 750px) {
+}
+footer.second{
+  border-top: 1px solid #aadcd2;
+  background-color: #544b59;
+  max-height: 55px;
+  margin: 0;
+}
 
-
-  #footer {
-    border-top:3px solid #000;
+footer.second p{
+  padding: 5px 0 0px 0;
+  text-align: center;
+}
+/*end of footer*/
+***************************
+/*Media Querries*/
+@media screen and (max-width: 480px){
+  h2{
+    font-size: 150%;
+  }
+  h3{
+    font-size: 125%
+  }
+  p{
+    font-size: 120%
+  }
+  header{
+    position: absolute;
+  }
+  #logo{
+    margin: 15px 0 20 -25px;
+    background-image: url("/EEProductions/images/Welcome/logo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #menu-icon{
+    display:block;
+  }
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #6991ac;
+    margin-right: 20px;
+    margin-top: 60px;
+    border: 1px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 50%;
+  }
+  nav:hover ul{
+    display: block;
+  }
+  nav li{
     text-align: center;
-    font-size: 20px;
-    background-color: aliceblue
+    width: 100%;
+    padding: 10px 0;
 
   }
-
-
+  .banner{
+    padding-top: 86px;
+  }
+  .banner{
+    background-image: url("/EEProductions/images/Welcome/welcome-mob.jpg");
+  }
+  article{
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+  }
+  .third{
+    width: 100%;
+  }
+  .social i{
+    font-size: 180%;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
