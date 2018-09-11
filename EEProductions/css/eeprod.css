@@ -8,12 +8,14 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* Add Normalize Code - https://smainoo.github.io/normalize.css/ */
-@import url('/acme/css/acmeNorm.css');
+@import url('eeprodNorm.css');
 
 /* ***************************************
 2. Content page Settings for small screen
 *******************************************/
+
 /*reset*/
+
 *{
   margin: 0;
   padding: 0;
@@ -88,7 +90,7 @@ nav {
 
 }
 #menu-icon{
-  display:hidden;
+  display:none;
   width: 40px;
   height: 40px;
   background-image:url("/EEProductions/images/Welcome/nav.png");
@@ -159,7 +161,7 @@ aside{
   background-color: darkgray;
 }
 #graduate{
-  background-color: aliceblue;
+  background-color: #c3d7df;
 }
 .inner-wrapper-2{
   float: left;
@@ -192,7 +194,7 @@ aside{
 
 /*start of footer styles*/
 footer{
-  background-color: #6991ac;
+  background-color: cornflowerblue;
   width: 100%;
 }
 .social{
@@ -226,6 +228,7 @@ footer.second p{
 }
 /*end of footer*/
 ***************************
+
 /*Media Querries*/
 @media screen and (max-width: 480px){
   h2{
@@ -248,6 +251,7 @@ footer.second p{
   }
   #menu-icon{
     display:block;
+    !importance;
   }
   nav ul, nav:active ul{
     display: none;
@@ -288,13 +292,14 @@ footer.second p{
   .social i{
     font-size: 180%;
   }
+  .third{
+    color: red;
+    float: none;
+    width: 100%;
+  }
+
 }
-
-
-
-
-
-
+/*end of small screen query*/
 
 
 
