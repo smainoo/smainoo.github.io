@@ -1,0 +1,78 @@
+.nav-pills{
+font-size:1.7em;
+background-color:black;
+margin-bottom: 10%;
+}
+
+/*Sets all the default body texts as white*/
+body{
+background-color:white;
+color: white;
+}
+.pageOne{
+/* The image used */
+background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+
+/* Full height */
+padding-bottom:10%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+h1{
+padding: 0px;
+margin:0px;
+font-size: 5em;
+}
+/*Style the button list*/
+.btn-default{
+background-color:black;
+color: blue;
+
+}
+
+
+
+/*Style the block column*/
+.block{
+background-color:black;
+opacity:.5;
+width: 50%;
+margin-left:auto;
+margin-right:auto;
+border-radius: 10px;
+}
+/*Styles the second page*/
+.pageTwo{
+background:url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+/* Full height */
+height: 800px;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding-top:5%;
+opacity:.95;
+
+
+}
+
+.name{
+padding:40px;
+}
+p{
+font-size:2.0em;
+}
+.intro{
+height: auto;
+padding: 40px;
+border-radius:50%;
+}
+.pageThree{
+
+}
