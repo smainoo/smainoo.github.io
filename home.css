@@ -3,6 +3,8 @@ font-size:1.7em;
 background-color:blue;
 margin-bottom: 10%;
 display: inline-block;
+width: auto;
+margin-top: 0px;
 }
 ul {
   list-style-type: none;
