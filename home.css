@@ -65,8 +65,8 @@ color: blue;
 
 /*Style the block column*/
 .block{
- /* background-color:dodgerblue;
-opacity:.95;*/
+ background-color:dodgerblue;
+opacity:.95;
 width: 50%;
 margin-left:auto;
 margin-right:auto;
