@@ -65,8 +65,8 @@ color: blue;
 
 /*Style the block column*/
 .block{
- background-color:gainsboro;
-opacity:.95;
+  background-color:#8e8f91;
+/*opacity:.95;*/
 width: 50%;
 margin-left:auto;
 margin-right:auto;
