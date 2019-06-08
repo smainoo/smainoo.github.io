@@ -82,8 +82,8 @@ display: grid;
 
 /*Styles the second page*/
 .pageTwo{
-  background:url("https://freerangestock.com/sample/119650/technology-background--digital-hand.jpg");
-opacity: .5;
+  background:url("https://img.freepik.com/free-vector/worldwide-connection-blue-background-illustration-vector_53876-61764.jpg?size=626&ext=jpg");
+
 /* Full height */
 height: 800px;
 
@@ -92,8 +92,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 padding-top:5%;
-opacity:.95;
-
+opacity:.5;
 
 }
 
@@ -108,6 +107,7 @@ height: auto;
 padding: 40px;
 border-radius:50%;
 }
+
 .pageThree{
   height: 100px;
   background-color: dodgerblue;
