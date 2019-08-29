@@ -16,6 +16,7 @@ body{
 
 .search{
   border-radius: 5px;
-  width: 50%;
-  position: absolute;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
 }
