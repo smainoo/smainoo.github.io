@@ -1,3 +1,7 @@
 .bg-primary {
   background-color: dodgerblue !important;
 }
+
+.card-text{
+  color: white !important;
+}
