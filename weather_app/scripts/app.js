@@ -3,6 +3,7 @@ const card = document.querySelector('.card');
 const details = document.querySelector('.details');
 const time = document.querySelector('img.time');
 const icon = document.querySelector('.icon img');
+const search = document.querySelector('.search');
 
 const updateUI = (data) => {
   // destructure properties
@@ -36,6 +37,7 @@ const updateCity = async (city) => {
   const cityDets = await getCity(city);
   const weather = await getWeather(cityDets.Key);
   return { cityDets, weather };
+  
 
 };
 
@@ -51,4 +53,33 @@ cityForm.addEventListener('submit', e => {
   updateCity(city)
     .then(data => updateUI(data))
     .catch(err => console.log(err));
+    search.style.visibility = "hidden";
+    
 });
+
+cityForm.addEventListener('keydown', e => {
+  search.style.visibility = "visible";
+  if(cityForm.city.value === ""){
+    search.style.visibility ="hidden";
+  }
+    
+});
+
+search.addEventListener('click', e =>{
+  // prevent default action
+  e.preventDefault();
+  
+  // get city value
+  const city = cityForm.city.value.trim();
+  cityForm.reset();
+
+  // update the ui with new city
+  updateCity(city)
+    .then(data => updateUI(data))
+    .catch(err => console.log(err));
+    search.style.visibility = "hidden";
+});
+
+// search.addEventListener('keyup', e =>{
+//   search.style.visibility = "visible"
+// })
