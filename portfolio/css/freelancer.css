@@ -2615,14 +2615,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #159a80;
-  border-color: #148f77;
+  background-color: lightblue;
+  border-color: lightblue;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2632,8 +2632,8 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #1e90ff;
+  border-color: lightblue;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
@@ -6916,13 +6916,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: blue !important;
+  background-color: dodgerblue;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #148f77 !important;
+  background-color: #148f77 ;
 }
 
 .bg-secondary {

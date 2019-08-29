@@ -16,7 +16,7 @@ form.addEventListener('submit', e =>{
         if(answer === correctAnswers[index]){
             score += 33.3
             score = Math.floor(score);
-            
+
         }
     });
 
@@ -26,7 +26,7 @@ form.addEventListener('submit', e =>{
     scrollTo(0,0);
 
     result.classList.remove('d-none');
-    
+
     // animate result
     let output = 0;
     const timer = setInterval(() =>{
@@ -38,9 +38,9 @@ form.addEventListener('submit', e =>{
         }
     }, 10);
 
-   
 
-    
-    
-    
+
+
+
+
 });
