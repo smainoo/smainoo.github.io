@@ -13,3 +13,8 @@ body{
   width: 100px;
   margin-bottom: -50px;
 }
+
+.search{
+  border-radius: 5px;
+  position: absolute;
+}
