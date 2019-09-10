@@ -50,3 +50,5 @@ search.addEventListener('keyup', () => {
     filterTodos(term);
     // console.log(lookup);
 });
+
+// set timer on items
