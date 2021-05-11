@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Me</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact Me</a>
@@ -58,7 +58,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/avataaars.png" alt="">
+      <img class="masthead-avatar mb-5" src="img/pfl.png" alt="">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">Smith Mainoo</h1>
@@ -73,7 +73,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">GIS Professional - Web Applications Developer</p>
+      <p class="masthead-subheading font-weight-light mb-0">Systems Design | Applications Developer</p>
 
     </div>
   </header>
@@ -81,6 +81,7 @@
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
+      
 
       <!-- Portfolio Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
@@ -95,24 +96,19 @@
       </div>
 
       <!-- Portfolio Grid Items -->
-      <div class="card-deck">
+    <div class="card-columns project-cards">
+      <div>
         <div class="card bg-primary">
-          <img class="card-img-top" src="/acme/images/site/logo.png" alt="Card image" height="30%">
+          <h4 class="card-title text-center" style="color: aliceblue;">Ravenous!</h4>
+          <img class="card-img-top" src="/ravenous/public/favicon.ico.ico" alt="Card image" height="10%">
           <div class="card-body text-center">
-            <p class="card-text">ACME is a prototype website built to demonstrate web front-end development 
-                skills-mobile first responsive design.</p>
-            <a href="/acme/index.html" class="btn btn-primary">See Project</a>
+            <p class="card-text">Search restaurants based on categories and ratings. Skills: React, Bootstrap, CSS.</p>
+            <a href="https://react-projects-8484e.web.app" class="btn btn-primary stretched-link">See Project</a>
 
           </div>
         </div>
-        <div class="card bg-primary">
-          <img class="card-img-top" src="/weather_app/img/icons/2.svg" alt="Card image" height="30%">
-          <div class="card-body text-center">
-            <p class="card-text">The Weather Ninja Web App is built with core javascript, utilizing Webpack, 
-                Babel and local storage advantage for excellent performance.</p>
-            <a href="/weather_app/index.html" class="btn btn-primary">See Project</a>
-          </div>
-        </div>
+      </div>
+      <div>
         <div class="card bg-primary">
           <img class="card-img-top" src="/chat_project/img/chat-icon.JPG" alt="Card image" height="30%">
           <div class="card-body text-center">
@@ -122,33 +118,51 @@
             <a href="/chat_project/index.html" class="btn btn-primary">See Project</a>
           </div>
         </div>
-        <div class="card bg-primary">
-          <img class="card-img-top" src="/weather/images/rain.jpg" alt="Card image" height="30%">
-          <div class="card-body text-center">
-            <p class="card-text">This was a class project covering all principles of web developments and API services. 
-            </p>
-            <a href="/weather/franklin.html" class="btn btn-primary">See Project</a>
-          </div>
-        </div>
-        <div class="card bg-primary">
-          <img class="card-img-top" src="/ninja_quiz/img/nin.JPG" alt="Card image" height="30%">
-          <div class="card-body text-center">
-            <p class="card-text">This application was built while practicing JavaScript Event listerners.</p>
-            <a href="/ninja_quiz/index.html" class="btn btn-primary">See Project</a>
-          </div>
-        </div>
-        <div class="card bg-primary">
-          <img class="card-img-top" src="/Todo_app/img/todo.JPG" alt="Card image" height="30%">
-          <div class="card-body text-center">
-            <p class="card-text">This application was built to reinforce the principles of  using methods in JavaScript.</p>
-            <a href="/Todo_app/index.html" class="btn btn-primary">See Project</a>
-          </div>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
     </div>
+      <div>
+        <div class="card bg-primary">
+          <img class="card-img-top" src="/weather_app/img/icons/2.svg" alt="Card image" height="30%">
+          <div class="card-body text-center">
+            <p class="card-text">The Weather Ninja Web App is built with core javascript, utilizing Webpack, 
+                Babel and local storage for excellent performance.</p>
+            <a href="/weather_app/index.html" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+          <div class="card bg-primary">
+            <img class="card-img-top" src="/ninja_quiz/img/nin.JPG" alt="Card image" height="30%">
+            <div class="card-body text-center">
+              <p class="card-text">Skills: Event Driven Development, Responsive Web Design.</p>
+              <a href="/ninja_quiz/index.html" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div class="card bg-primary">
+          <img class="card-img-top" src="/westside-music/src/Components/App/background_photo_desktop.jpg" alt="Card image" height="30%">
+          <div class="card-body text-center">
+            <p class="card-text">Westside music lets you search and add playlists to your Spotify account. Skills: React, API Integration.
+            </p>
+            <a href="http://tested-clocks.surge.sh/" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="card bg-primary">
+            <img class="card-img-top" src="/Todo_app/img/todo.JPG" alt="Card image" height="30%">
+            <div class="card-body text-center">
+              <p class="card-text">Enjoy this SPA with CRUD development. 
+                <br> Skills: JavaScript, Bootstrap.</p>
+              <a href="/Todo_app/index.html" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+      </div>
+  </div>
+    </div>
+
+     
   </section>
 
   <!-- About Section -->
@@ -169,19 +183,14 @@
 
       <!-- About Section Content -->
       <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Always learning and applying the latest industry technology to drive innovation, and increase productivity.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">BSc. Geospatial Computing at Brigham Young University-Idaho.
-            Passionate about Geographic Information Systems, and Web Development. 
-            Accumulated various skillset over the years in Spatial analysis, data analysis, 
-            programming, web development, and looks forward to becoming a renowned GIS Developer 
-            who can influence the world positively with cutting edge technology.
+        <div class="col-lg-12 mr-auto">
+          <p class="lead">
+            Passionate about Web Technologies. 
+            Accumulated various skillset over the years in programming methodologies, and looking for opportunities to apply my skills to achieve your organization's goals.
             <br>
-            <a href="https://storymaps.arcgis.com/stories/062ad271d8cb4fca88ea4b1ec5d9eede">Check out other GIS projects here</a>
+            Other skills: SQL, Python, Java, C#, PHP, MySQL
           </p>
-              
+          <a href="https://storymaps.arcgis.com/stories/062ad271d8cb4fca88ea4b1ec5d9eede">Check out other GIS projects here</a>
             
         </div>
       </div>
@@ -189,18 +198,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-<!--
-  <section class="page-section" id="contact">
-    <div class="container">
-
-       Contact Section Heading
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-
-
-    </div>
-  </section>
--->
 
   <!-- Footer -->
   <footer class="footer text-center">
